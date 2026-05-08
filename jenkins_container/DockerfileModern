@@ -1,0 +1,11 @@
+FROM jenkins/jenkins:2.555.1-jdk21
+# Skip setup wizard and enable permissive security as requested
+ENV JAVA_OPTS="-Djenkins.install.runSetupWizard=false -Dpermissive-script-security.enabled=true"
+ENV CASC_JENKINS_CONFIG="/usr/share/jenkins/ref/casc_configs/casc.yaml"
+# Copy your versionless list
+COPY --chown=jenkins:jenkins plugins.txt /usr/share/jenkins/ref/plugins.txt
+# Use --latest true to resolve versions dynamically
+RUN jenkins-plugin-cli --latest true --plugin-file /usr/share/jenkins/ref/plugins.txt
+# Copy your JCasC config
+RUN mkdir -p /usr/share/jenkins/ref/casc_configs
+COPY --chown=jenkins:jenkins casc.yaml /usr/share/jenkins/ref/casc_configs/casc.yaml
