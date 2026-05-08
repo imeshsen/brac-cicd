@@ -1,0 +1,11 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<org.jenkinsci.plugins.DependencyTrack.DescriptorImpl plugin="dependency-track@6.0.2">
+  <dependencyTrackUrl>http://bracdemo-nexus.eastus.cloudapp.azure.com:9081</dependencyTrackUrl>
+  <dependencyTrackFrontendUrl>http://bracdemo-nexus.eastus.cloudapp.azure.com:9080</dependencyTrackFrontendUrl>
+  <dependencyTrackApiKey>dependency-track-api-key</dependencyTrackApiKey>
+  <dependencyTrackAutoCreateProjects>false</dependencyTrackAutoCreateProjects>
+  <dependencyTrackPollingTimeout>5</dependencyTrackPollingTimeout>
+  <dependencyTrackPollingInterval>10</dependencyTrackPollingInterval>
+  <dependencyTrackConnectionTimeout>10</dependencyTrackConnectionTimeout>
+  <dependencyTrackReadTimeout>60</dependencyTrackReadTimeout>
+</org.jenkinsci.plugins.DependencyTrack.DescriptorImpl>

@@ -1,0 +1,513 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@1571.1580.v18e46842c125">
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>admin</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <jenkins.metrics.impl.TimeInQueueAction plugin="metrics@4.2.37-494.v06f9a_939d33a_">
+      <queuingDurationMillis>2</queuingDurationMillis>
+      <blockedDurationMillis>0</blockedDurationMillis>
+      <buildableDurationMillis>0</buildableDurationMillis>
+      <waitingDurationMillis>0</waitingDurationMillis>
+    </jenkins.metrics.impl.TimeInQueueAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="pipeline-groovy-lib@797.v90ea_a_9b_e45a_0">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.ExecutionModelAction plugin="pipeline-model-definition@2.2277.v00573e73ddf1">
+      <stagesUUID>e9ab3f99-6bd3-4f1c-98fa-d6b43e0ba96e</stagesUUID>
+      <pipelineDefs>
+        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTPipelineDef plugin="pipeline-model-api@2.2277.v00573e73ddf1">
+          <stages>
+            <stages>
+              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                <name>Clone</name>
+                <branches>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                    <name>default</name>
+                    <steps>
+                      <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                        <name>git</name>
+                        <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                          <arguments class="linked-hash-map">
+                            <entry>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                <key>branch</key>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                <value class="string">main</value>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                            </entry>
+                            <entry>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                <key>url</key>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                <value class="string">https://bracdemo-github-primary.eastus.cloudapp.azure.com/BRAC-Bank-Nable/brac-monorepo.git</value>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                            </entry>
+                            <entry>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                <key>credentialsId</key>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                <value class="string">git-repo-creds</value>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                            </entry>
+                          </arguments>
+                        </args>
+                      </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                    </steps>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                </branches>
+              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                <when>
+                  <conditions>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTWhenCondition>
+                      <name>changeset</name>
+                      <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTSingleArgument">
+                        <value class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue$ConstantValue">
+                          <value class="string">spring-app-1/**</value>
+                        </value>
+                      </args>
+                      <children/>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTWhenCondition>
+                  </conditions>
+                </when>
+                <name>Build app-1</name>
+                <branches>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                    <name>default</name>
+                    <steps>
+                      <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTScriptBlock>
+                        <name>script</name>
+                        <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                          <arguments class="linked-hash-map">
+                            <entry>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                <key>scriptBlock</key>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                <value class="string">echo &apos;Detected changes in spring-app-1&apos;
+                    scanCode(&quot;spring-app-1&quot;)
+                    publishSbom(&quot;spring-app-1&quot;)
+                    buildModule(&quot;spring-app-1&quot;)
+                    pushImage(&quot;spring-app-1&quot;)
+                    updateManifests(&quot;spring-app-1&quot;)</value>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                            </entry>
+                          </arguments>
+                        </args>
+                      </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTScriptBlock>
+                    </steps>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                </branches>
+              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                <when>
+                  <conditions>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTWhenCondition>
+                      <name>changeset</name>
+                      <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTSingleArgument">
+                        <value class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue$ConstantValue">
+                          <value class="string">spring-app-2/**</value>
+                        </value>
+                      </args>
+                      <children/>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTWhenCondition>
+                  </conditions>
+                </when>
+                <name>Build app-2</name>
+                <branches>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                    <name>default</name>
+                    <steps>
+                      <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTScriptBlock>
+                        <name>script</name>
+                        <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                          <arguments class="linked-hash-map">
+                            <entry>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                <key>scriptBlock</key>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                <value class="string">echo &apos;Detected changes in spring-app-2.&apos;
+                    scanCode(&quot;spring-app-2&quot;)
+                    publishSbom(&quot;spring-app-2&quot;)
+                    buildModule(&quot;spring-app-2&quot;)
+                    pushImage(&quot;spring-app-2&quot;)
+                    updateManifests(&quot;spring-app-2&quot;)</value>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                            </entry>
+                          </arguments>
+                        </args>
+                      </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTScriptBlock>
+                    </steps>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                </branches>
+              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+            </stages>
+            <uuid>e9ab3f99-6bd3-4f1c-98fa-d6b43e0ba96e</uuid>
+          </stages>
+          <environment>
+            <variables class="linked-hash-map">
+              <entry>
+                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                  <key>REMOTE_USER</key>
+                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                  <value class="string">app</value>
+                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+              </entry>
+              <entry>
+                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                  <key>REMOTE_HOST</key>
+                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                  <value class="string">192.168.85.193</value>
+                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+              </entry>
+              <entry>
+                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                  <key>SSH_CRED_ID</key>
+                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                  <value class="string">app-vm</value>
+                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+              </entry>
+              <entry>
+                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                  <key>GITHUB_CREDS</key>
+                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                  <value class="string">git-repo-creds</value>
+                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+              </entry>
+              <entry>
+                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                  <key>GIT_BRANCH</key>
+                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                  <value class="string">main</value>
+                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+              </entry>
+            </variables>
+          </environment>
+          <agent>
+            <variables class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue$ConstantValue">
+              <value class="string">192.168.85.192</value>
+            </variables>
+            <agentType>
+              <key>label</key>
+            </agentType>
+          </agent>
+        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTPipelineDef>
+      </pipelineDefs>
+    </org.jenkinsci.plugins.pipeline.modeldefinition.actions.ExecutionModelAction>
+    <com.cloudbees.plugins.credentials.builds.CredentialsParameterBinder plugin="credentials@1502.v5c95e620ddfe">
+      <boundCredentials class="concurrent-hash-map"/>
+    </com.cloudbees.plugins.credentials.builds.CredentialsParameterBinder>
+    <hudson.plugins.git.util.BuildData plugin="git@5.10.1">
+      <buildsByBranchName>
+        <entry>
+          <string>refs/remotes/origin/main</string>
+          <hudson.plugins.git.util.Build>
+            <marked plugin="git-client@6.6.0">
+              <sha1>6956a5f4dacc1f1904aeb6eaf79a92c86eaa2575</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>refs/remotes/origin/main</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </marked>
+            <revision reference="../marked"/>
+            <hudsonBuildNumber>38</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+      </buildsByBranchName>
+      <lastBuild reference="../buildsByBranchName/entry/hudson.plugins.git.util.Build"/>
+      <scmName></scmName>
+      <remoteUrls>
+        <string>https://bracdemo-github-primary.eastus.cloudapp.azure.com/BRAC-Bank-Nable/brac-monorepo.git</string>
+      </remoteUrls>
+    </hudson.plugins.git.util.BuildData>
+    <org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState plugin="workflow-scm-step@466.va_d69e602552b_">
+      <revisionStates>
+        <entry>
+          <string>git https://bracdemo-github-primary.eastus.cloudapp.azure.com/BRAC-Bank-Nable/brac-monorepo.git</string>
+          <hudson.scm.SCMRevisionState_-None/>
+        </entry>
+      </revisionStates>
+    </org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState>
+    <org.jenkinsci.plugins.workflow.cps.EnvActionImpl plugin="workflow-cps@4315.va_e456c4e7f4f">
+      <env class="tree-map"/>
+    </org.jenkinsci.plugins.workflow.cps.EnvActionImpl>
+    <jenkins.metrics.impl.SubTaskTimeInQueueAction plugin="metrics@4.2.37-494.v06f9a_939d33a_">
+      <queuingDurationMillis>2</queuingDurationMillis>
+      <blockedDurationMillis>0</blockedDurationMillis>
+      <buildableDurationMillis>0</buildableDurationMillis>
+      <waitingDurationMillis>0</waitingDurationMillis>
+      <executingDurationMillis>425417</executingDurationMillis>
+      <workUnitCount>1</workUnitCount>
+    </jenkins.metrics.impl.SubTaskTimeInQueueAction>
+  </actions>
+  <queueId>714</queueId>
+  <timestamp>1778144654337</timestamp>
+  <startTime>1778144654339</startTime>
+  <result>SUCCESS</result>
+  <duration>425892</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>SUCCESS</result>
+    <script>def scanCode(moduleName) {
+    echo &quot;Scanning: ${moduleName}&quot;
+    dir(moduleName) {
+        sh &quot;rm -f ${moduleName}-sbom.json || true&quot;
+        sh &quot;docker run --rm -v ${WORKSPACE}/${moduleName}:/workspace \
+        -v /root/.cache/trivy:/root/.cache/trivy aquasec/trivy:latest fs \
+        --format cyclonedx \
+        --scanners vuln \
+      --output /workspace/${moduleName}-sbom.json /workspace&quot;
+    }
+}
+def publishSbom(moduleName) {
+    echo &quot;Exporting ${moduleName} SBOM&quot;
+    def appName = sh(
+            script: &quot;&quot;&quot;
+            docker run --rm -v ${WORKSPACE}/${moduleName}:/app -w /app maven:3.8.6-openjdk-8 \
+            mvn help:evaluate -Dexpression=project.artifactId -q -DforceStdout
+            &quot;&quot;&quot;,
+            returnStdout: true
+        ).trim()
+        def appVersion = sh(
+            script: &quot;&quot;&quot;
+            docker run --rm -v ${WORKSPACE}/${moduleName}:/app -w /app maven:3.8.6-openjdk-8 \
+            mvn help:evaluate -Dexpression=project.version -q -DforceStdout
+            &quot;&quot;&quot;,
+            returnStdout: true
+        ).trim()
+    dir(moduleName) {
+        echo &quot;Detected version: ${appVersion}&quot;
+        sh &quot;&quot;&quot;
+        curl -X POST &quot;http://bracdemo-nexus.eastus.cloudapp.azure.com:9081/api/v1/bom&quot; \
+             -H &apos;Content-Type: multipart/form-data&apos; \
+             -H &apos;X-Api-Key: odt_ikgtPlOM_0KqbYcUAFINcreMNhHJchLVK6CUgXSFV&apos; \
+             -F &quot;projectName=brac-${appName}-app&quot; \
+             -F &quot;autoCreate=true&quot; \
+             -F &quot;projectVersion=${appVersion}&quot; \
+             -F &quot;bom=@${moduleName}-sbom.json&quot;
+        &quot;&quot;&quot;
+        sh &quot;rm -f ${moduleName}-sbom.json&quot;
+    }
+}
+def buildModule(moduleName) {
+    echo &quot;Building image for: ${moduleName}&quot;
+        def appVersion = sh(
+            script: &quot;&quot;&quot;
+            docker run --rm -v ${WORKSPACE}/${moduleName}:/app -w /app maven:3.8.6-openjdk-8 \
+            mvn help:evaluate -Dexpression=project.version -q -DforceStdout
+            &quot;&quot;&quot;,
+            returnStdout: true
+        ).trim()
+    dir(moduleName) {
+        def gitCommit = sh(
+            returnStdout: true,
+            script: &apos;git rev-parse --short HEAD&apos;
+        ).trim()
+        sh &quot;&quot;&quot;
+        docker build -t test-quay-quay.apps.pococp.nable.local/quayadmin/${moduleName}:${appVersion} .
+        docker image prune -f
+        &quot;&quot;&quot;
+    }
+}
+def pushImage(moduleName) {
+    echo &quot;Pushing image of: ${moduleName}&quot;
+    def appVersion = sh(
+            script: &quot;&quot;&quot;
+            docker run --rm -v ${WORKSPACE}/${moduleName}:/app -w /app maven:3.8.6-openjdk-8 \
+            mvn help:evaluate -Dexpression=project.version -q -DforceStdout
+            &quot;&quot;&quot;,
+            returnStdout: true
+        ).trim()
+    dir(moduleName) {
+        sh &quot;&quot;&quot;
+        docker push test-quay-quay.apps.pococp.nable.local/quayadmin/${moduleName}:${appVersion}
+        docker rmi test-quay-quay.apps.pococp.nable.local/quayadmin/${moduleName}:${appVersion}
+        docker image prune -f
+        &quot;&quot;&quot;
+    }
+}
+def updateManifests(moduleName) {
+    echo &quot;Pushing image of ${moduleName}&quot;
+    def appVersion = sh(
+            script: &quot;&quot;&quot;
+            docker run --rm -v ${WORKSPACE}/${moduleName}:/app -w /app maven:3.8.6-openjdk-8 \
+            mvn help:evaluate -Dexpression=project.version -q -DforceStdout
+            &quot;&quot;&quot;,
+            returnStdout: true
+        ).trim()
+    dir(moduleName) {
+        // def gitCommit = sh(returnStdout: true, script: &apos;git rev-parse --short HEAD&apos;).trim()
+        def manifestRepo = &apos;https://bracdemo-github-primary.eastus.cloudapp.azure.com/BRAC-Bank-Nable/ocp-manifests.git&apos;
+        def fullImageName = &quot;test-quay-quay.apps.pococp.nable.local/quayadmin/${moduleName}:${appVersion}&quot;
+        withCredentials([usernamePassword(credentialsId: &apos;git-repo-creds&apos;, passwordVariable: &apos;GIT_PASS&apos;, usernameVariable: &apos;GIT_USER&apos;)]) {
+            // Clean up any existing directory from previous failed runs
+            sh &quot;rm -rf manifest-repo&quot;
+            // Use single quotes for the URL to avoid the security warning
+            sh &apos;git clone https://${GIT_USER}:${GIT_PASS}@&apos; + manifestRepo.replace(&quot;https://&quot;, &quot;&quot;) + &apos; manifest-repo&apos;
+            dir(&apos;manifest-repo&apos;) {
+                sh &quot;&quot;&quot;
+                    sed -i &apos;s|image: .*|image: ${fullImageName}|g&apos; ${moduleName}/deployment.yml
+                
+                    if ! git diff --exit-code ${moduleName}/deployment.yml; then
+                        git config user.email &quot;jenkins@nable.lk&quot;
+                        git config user.name &quot;Jenkins CI&quot;
+                
+                        git add ${moduleName}/deployment.yml
+                        git commit -m &quot;update ${moduleName} image to ${appVersion}&quot;
+                        git push origin HEAD:master
+                    else
+                        echo &quot;No changes detected.&quot;
+                    fi
+                &quot;&quot;&quot;
+            }
+        }
+    }
+}
+
+
+pipeline {
+    agent { label &apos;192.168.85.192&apos; }
+
+    environment {
+        REMOTE_USER = &apos;app&apos;
+        REMOTE_HOST = &apos;192.168.85.193&apos;
+        SSH_CRED_ID = &apos;app-vm&apos;
+        GITHUB_CREDS = &apos;git-repo-creds&apos;
+        GIT_BRANCH = &apos;main&apos;
+    }
+
+    stages {
+
+        stage(&apos;Clone&apos;) {
+            steps {
+                git branch: &apos;main&apos;,
+                    url: &apos;https://bracdemo-github-primary.eastus.cloudapp.azure.com/BRAC-Bank-Nable/brac-monorepo.git&apos;,
+                    credentialsId: &apos;git-repo-creds&apos;
+            }
+        }
+
+        stage(&apos;Build app-1&apos;) {
+            when {
+                changeset &quot;spring-app-1/**&quot;
+            }
+            steps {
+                script {
+                    echo &apos;Detected changes in spring-app-1&apos;
+                    scanCode(&quot;spring-app-1&quot;)
+                    publishSbom(&quot;spring-app-1&quot;)
+                    buildModule(&quot;spring-app-1&quot;)
+                    pushImage(&quot;spring-app-1&quot;)
+                    updateManifests(&quot;spring-app-1&quot;)
+                }
+            }
+        }
+
+        stage(&apos;Build app-2&apos;) {
+            when {
+                changeset &quot;spring-app-2/**&quot;
+            }
+            steps {
+                script {
+                    echo &apos;Detected changes in spring-app-2.&apos;
+                    scanCode(&quot;spring-app-2&quot;)
+                    publishSbom(&quot;spring-app-2&quot;)
+                    buildModule(&quot;spring-app-2&quot;)
+                    pushImage(&quot;spring-app-2&quot;)
+                    updateManifests(&quot;spring-app-2&quot;)
+                }
+            }
+        }
+    }
+}</script>
+    <loadedScripts class="linked-hash-map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>298116059</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>348969125</long>
+      </entry>
+      <entry>
+        <string>runQueue</string>
+        <long>2576217696</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>5013571384</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>106757108</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>3163549950</long>
+      </entry>
+    </timings>
+    <internalCalls class="sorted-set">
+      <string>hudson.plugins.git.GitChangeSetList.any</string>
+      <string>hudson.plugins.git.GitChangeSetList.iterator</string>
+      <string>jenkins.scm.api.SCMHead$HeadByItem.findHead</string>
+      <string>org.jenkinsci.plugins.workflow.job.WorkflowRun.parent</string>
+    </internalCalls>
+    <sandbox>true</sandbox>
+    <iota>132</iota>
+    <head>1:132</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+    <storageDir>workflow-completed</storageDir>
+  </execution>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList">
+    <org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+      <scm class="hudson.plugins.git.GitSCM" plugin="git@5.10.1">
+        <configVersion>2</configVersion>
+        <userRemoteConfigs>
+          <hudson.plugins.git.UserRemoteConfig>
+            <url>https://bracdemo-github-primary.eastus.cloudapp.azure.com/BRAC-Bank-Nable/brac-monorepo.git</url>
+            <credentialsId>git-repo-creds</credentialsId>
+          </hudson.plugins.git.UserRemoteConfig>
+        </userRemoteConfigs>
+        <branches class="singleton-list">
+          <hudson.plugins.git.BranchSpec>
+            <name>*/main</name>
+          </hudson.plugins.git.BranchSpec>
+        </branches>
+        <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+        <submoduleCfg class="empty-list"/>
+        <extensions>
+          <hudson.plugins.git.extensions.impl.LocalBranch>
+            <localBranch>main</localBranch>
+          </hudson.plugins.git.extensions.impl.LocalBranch>
+        </extensions>
+      </scm>
+      <node>Agent Node - 192.168.85.192</node>
+      <workspace>/root/workspace/monorepo-ocp</workspace>
+      <changelogFile>/var/jenkins_home/jobs/monorepo-ocp/builds/38/changelog7695441823774582554.xml</changelogFile>
+      <pollingBaseline class="hudson.scm.SCMRevisionState$None" reference="../../../actions/org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState/revisionStates/entry/hudson.scm.SCMRevisionState_-None"/>
+    </org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+  </checkouts>
+</flow-build>

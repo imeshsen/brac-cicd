@@ -1,0 +1,381 @@
+Started by user [8mha:////4IOkWg51Z0V45QbTnzlBp1P2ZrXUuLsqM1fdJVgkJO7OAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyWEgZu/dLi1CL9xJTczDwAZ3pnlMAAAAA=[0mcicd
+[8mha:////4ChMbxEVSpCVwKA3xXe5i5H5funkEWoc/sE20Y9tu2FVAAAAoh+LCAAAAAAAAP9tjTEOwjAQBM8BClpKHuFItIiK1krDC0x8GCfWnbEdkooX8TX+gCESFVvtrLSa5wtWKcKBo5UdUu8otU4GP9jS5Mixv3geZcdn2TIl9igbHBs2eJyx4YwwR1SwULBGaj0nRzbDRnX6rmuvydanHMu2V1A5c4MHCFXMWcf8hSnC9jqYxPTz/BXAFEIGsfuclm8zQVqFvQAAAA==[0m[Pipeline] Start of Pipeline
+[8mha:////4NuFugUaNgZHlFqTA19Sm5xD5jUedPg5Q7Htt0ON1T0HAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycohUghExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jduZBmjwAAAAA==[0m[Pipeline] node
+Running on [8mha:////4LwcTFxe4uw0T+iVhJ5FY+ro1pUQTd5jwlYt7lxCBCmZAAAAuR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzpEgYT/eT83ILSktQifcf01LwSVSMDP6B7gZSqkQuQNLQ0UjVyNTSzAJIWpiCmpZE+ALjNsgjpAAAA[0mAgent Node - 192.168.85.192 in /root/workspace/monorepo-vm
+[8mha:////4HO/OPBR1juSepuMRlcPXpld/VLNgXinkmrSE1OeyVqWAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gA0xsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jfoP95RwAAAAA==[0m[Pipeline] {
+[8mha:////4AzXDxcUk/I/YLdDvNqrzNnKx6OxyDIb2+pKykECTsr+AAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gQkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jc09154wAAAAA==[0m[Pipeline] withEnv
+[8mha:////4IPKDAKJlAByrx41irUny+knh+Xo4S/Fdk4dlv/LHjJKAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0ggUxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jek7ggRwAAAAA==[0m[Pipeline] {
+[8mha:////4IQOPR0X1Sr6YUNXlOEgKkgJY4HPwBdCFAFjO5QxHM9zAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gwExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jcChmMxwAAAAA==[0m[Pipeline] stage
+[8mha:////4D/r4eD7KKu1dl5wo5Z3fCsNFSNCOYCqvJaxfVyrI1mNAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0BAkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jfpX/cvwAAAAA==[0m[Pipeline] { (Clone)
+[8mha:////4CE/EJYozPA/h/ToelCARihTIsYbaXL70RuUndCYLMWuAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbaoyVLaHxBMgiwpL/WWDdrTyRV/MOEjexcpJJ5k3zXm9Y5wQnSpZ7g73DrB2PYbR18YlSfws0cU9XrgkzBcOlmSR15rygpGJgCWtgJWBjUAfKDm2BrfDqodqg0LaXkup3FNC4boAnMFHNRaXyhTnB7j52mfDn+SuAORZg+9pD/AAeoCAqvAAAAA==[0m[Pipeline] git
+The recommended git tool is: NONE
+using credential git-repo-creds
+Fetching changes from the remote Git repository
+ > git rev-parse --resolve-git-dir /root/workspace/monorepo-vm/.git # timeout=10
+ > git config remote.origin.url https://bracdemo-github-primary.eastus.cloudapp.azure.com/BRAC-Bank-Nable/brac-monorepo.git # timeout=10
+Fetching upstream changes from https://bracdemo-github-primary.eastus.cloudapp.azure.com/BRAC-Bank-Nable/brac-monorepo.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.47.3'
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --force --progress -- https://bracdemo-github-primary.eastus.cloudapp.azure.com/BRAC-Bank-Nable/brac-monorepo.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+Checking out Revision 0267e5354c5e5e3e5d7212ac7414e950e820353c (refs/remotes/origin/main)
+Commit message: "Update pom.xml"
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 0267e5354c5e5e3e5d7212ac7414e950e820353c # timeout=10
+ > git branch -a -v --no-abbrev # timeout=10
+ > git branch -D main # timeout=10
+ > git checkout -b main 0267e5354c5e5e3e5d7212ac7414e950e820353c # timeout=10
+ > git rev-list --no-walk 9889e3c4ee18c4ab994cc05f081bd3790747991a # timeout=10
+[8mha:////4HPB7q4uMKjG/GanM9Koo32pWXIRbJgefz2UzCUbIOxHAAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMKBDglR0VppeIFJjHFi3QX7QlLxIr7GH4iIRMVWO9PM641lijhydKqx1HpKlVdd6N301MCxvQYeVMMXVTElDlaVdii5tqcZSxaLeVmOhcbKUhU4eXKCtW7MwxTBkCvOEid30Mh9fccTmZ7KYqJ8YYzY3Po6Mf06fwMYu06Q77aCbP8Brmfz270AAAA=[0m[Pipeline] }
+[8mha:////4Bs67F0FCZKYTCIH5Xzf4KbYM6bDNA7qsspxcwXakOE4AAAAox+LCAAAAAAAAP9tjTESgjAQRT84FraWHiIMlYVjZZuh8QQRYgxkdjFZhMoTeTXvICMzVv7qv9e81xvrFHHk6FRrqfOUaq/6MLj5qZFjdw08qpYvqmZKHKyq7FhxY08LViwWy7IcK42NpTpw8uQEW92ahymCIVecJc7uoJH75o4nMj2XxUT5whSxuw1NYvp1/gYw9b0gL0tBtv8Aj1Msdr0AAAA=[0m[Pipeline] // stage
+[8mha:////4EZMvpX8dj8EhwZOy0oAfajouhzw7LjccGybCL55vypNAAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQjKGgQFa3lhheY2Bgn1l2wLyQVL+Jr/IFAJCq22llpNc8XlDnBgZKXjcM2YK6D7GLvpyYHSu0l0iAbOsuaMFN0UrtBk3XHGTWxgzmigIWCpcM6Ug7oGVaqMXdTRYO+OnGatr2CItgbPECoycwm8RfGBOtrbzPhz/NXAGPHIHYMxWb7OZZvfPyORMEAAAA=[0m[Pipeline] stage
+[8mha:////4Ccf6TfDTloSuld0xsAaQ9DwQmOTyncgzJomjNME4m4iAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUwIiYukZZOEFoQkgb/V9+UtqJE3E17kBLJSY8WLYl673eUESGE7ETjcXWY6y96ELvpiQG4vYaaBANXURNGClYoeygyNhqqYqShUVZDisJa4t1oOjRJdjIRj90GTS68px42o4Scm/u8IRMTuSkOX3LyLC99SYS/jh/ATB2CfLdfrbD/Cw+y7kUycIAAAA=[0m[Pipeline] { (Build app-1)
+[8mha:////4MSwcvA6mljuOzh+65XnJxmgG5QYFXqUD88RF9mWgGkgAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUCDbE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5Dv9rMd5mfxAbNWnxXCAAAA[0m[Pipeline] script
+[8mha:////4BGX9hDFghjBG+9OGaTY0Tb3WkkgshVfZ5ooq0vF+owtAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUSDAhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD5WQ+PfCAAAA[0m[Pipeline] {
+[8mha:////4M4yPhCDalqr38AaGVgQkXstzAP9+36hHuKt71ulDvpqAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiCmgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUG53n9qHN7LjSKW+AAAA[0m[Pipeline] echo
+Detected changes in spring-app-1
+[8mha:////4PdK/KKx9CV0mMxfVFJSOGgRyBXldZahpLXUJafYvvGbAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiCkSBqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDhnK7+9Q+vAHz0lO8vgAAAA==[0m[Pipeline] echo
+Scanning: spring-app-1
+[8mha:////4HPbpO6jcxQFz+9b2CwxPppG8HOeQ0xwsajZ4VH4J6NRAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUDEhIiKlrlIUThCaEtNH/5SelnTgRV+MOtFRiwoNlW7Le6w1FZDgRO9FYbD3G2osu9G5KYiBur4EG0dBF1ISRghXKDoqMrZaqKFlYlOWwkrC2WAeKHl2CjWz0Q5dBoyvPiaftKCH35g5PyORETprTt4wM21tvIuGP8xcAY5cg3+1nO8zP4gOLXOiKwgAAAA==[0m[Pipeline] dir
+Running in /root/workspace/monorepo-vm/spring-app-1
+[8mha:////4MGSZlfr7KpHZDt2maheADOd44jKCoYYTeXU7MkoSNK9AAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUbCDE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5Dv9rMd5mfxASnCIIrCAAAA[0m[Pipeline] {
+[8mha:////4F8IAUcYGpJetZJ3A86tsa9k/YZSjNMPPrdCtJk6nBRfAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICdAilorXc8AKTGOPEugu2g1PxIr7GH7CIRMUWq51t5vWGZfBQszfYaeothcbi4EaTFyb2/dVxwo4v2DAFdhqlTpJbfZpRctQwpyhhIWClqXEcLJkIa9Gph6qcIlOdo8/fUUBp2zs8oRDZHJWPX5g8bG5jG5h+nr8CmIYI5e6Qa78dPhmQ9Da+AAAA[0m[Pipeline] sh
++ rm -f spring-app-1-sbom.json
+[8mha:////4LSz2jp3Lxm9i3F/3diE29ZSbziN0TkTQPV63VXbG48oAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKi0CFEldZKwwtMbIwT687YDknFi/gaf8AiEhVbrHa2mdcb1jHAiYPBXtNgKXYWvRtNXjhxGK6OJ+z5gh1TZKex1VPLSjcLtpw0LClKWAnYaOocR0smwVb08iErJ8lU5xTydxRQWnWHJxQim5MM6QtzgN1tVJHp5/krgNknKOtDrn3tP1ih7y++AAAA[0m[Pipeline] sh
++ docker run --rm -v /root/workspace/monorepo-vm/spring-app-1:/workspace -v /root/.cache/trivy:/root/.cache/trivy aquasec/trivy:latest fs --format cyclonedx --scanners vuln --output /workspace/spring-app-1-sbom.json /workspace
+2026-05-07T07:44:58Z	INFO	[vuln] Vulnerability scanning is enabled
+2026-05-07T07:45:24Z	INFO	Number of language-specific files	num=1
+2026-05-07T07:45:24Z	INFO	[pom] Detecting vulnerabilities...
+[8mha:////4K0fOzLShUihvXdGzZzYUchQBi2ZdEI90ALP31+kNn+SAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMIR6RCiSmul4QUmPowT687YDknFi/gaf8AiEhVbrHa2mdcb1jHAiYMRPdJgKXZWeDeavMTEYbg6nkTPF9ExRXYoWpxa1tgs2HJCWFKUsJKwQeocR0smwVb26qEqp8hU5xTyd5RQWn2HJxQym5MK6QtzgN1t1JHp5/krgNn7BGVd59ofPoukFhO+AAAA[0m[Pipeline] }
+[8mha:////4Mh6D0GoTFn5CsuWk29BnUvEjVWSbtVfrP6k+VzXLuDZAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIioEFCqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDu9rm2hw+4R02vvgAAAA==[0m[Pipeline] // dir
+[8mha:////4OZDiAzk6btLhqXxnHF8G6FZ/wUvxfJ9HLGO22hyjBrlAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiEFQoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDREKLeHXLv98AFpPziVvgAAAA==[0m[Pipeline] echo
+Exporting spring-app-1 SBOM
+[8mha:////4I1usyw2Nv/EJAXR6WWjzyALAxGCBxez1wIgGlxlAXEeAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIikFIhqrRWGl5gYmOcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThwM9poGS7Gz6N1o8sKJw3B1PGHPF+yYIjuNrZ5aVrpZsOWkYUlRwkrARlPnOFoyCbailw9ZOUmmOqeQv6OA0qo7PKEQ2ZxkSF+YA+xuo4pMP89fAcw+Qbmvcx1q/wEoDiOMvgAAAA==[0m[Pipeline] sh
++ docker run --rm -v /root/workspace/monorepo-vm/spring-app-1:/app -w /app maven:3.8.6-openjdk-8 mvn help:evaluate -Dexpression=project.artifactId -q -DforceStdout
+[8mha:////4HgNh6PaBLjsku0QTTzBhatlauZOGKROOmCUI9oMUBhRAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIikKBBqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKYhQrnd59odhg/rXQ6nvgAAAA==[0m[Pipeline] sh
++ docker run --rm -v /root/workspace/monorepo-vm/spring-app-1:/app -w /app maven:3.8.6-openjdk-8 mvn help:evaluate -Dexpression=project.version -q -DforceStdout
+[8mha:////4KUW2ZP0gpagrDzs+bCijQEoIKcx+SJijBvA1J3pwGskAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUICEG1Ik16sIJQhNC0uj/kqSkEyfiatyBQCUmPFi2Jes9X1AFDw15zazC3mDoDBvcqHNiiXx/cZSYpTPrCAM5xVqVWpLqONeWooJZRQkLDkuFnaNgUEdYcSvuonYCdX2KPm8HDqWRN3hAwTM5Ch+/ZfKwvo4yEP44fwEwDRHKzS7bdv95Vm/D9FZKwgAAAA==[0m[Pipeline] dir
+Running in /root/workspace/monorepo-vm/spring-app-1
+[8mha:////4JopiJpjycJFA8bM2jXp3z2C0syqusmgFIMqsWFTc74zAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUYgEJMXWNsnCC0ISQNvq//KS0EyfiatyBlkpMeLBsS9Z7vaGIDCdiJxqLrcdYe9GF3k1JDMTtNdAgGrqImjBSsELZQZGx1VIVJQuLshxWEtYW60DRo0uwkY1+6DJodOU58bQdJeTe3OEJmZzISXP6lpFhe+tNJPxx/gJg7BLku/1sh/lZfAAnLfKUwgAAAA==[0m[Pipeline] {
+[8mha:////4AsIxSKdmVbFyw6D/DHlhUrtaHKeB54yxqhcw2on5p26AAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiUYEQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUG53n9qHNwcnzs++AAAA[0m[Pipeline] echo
+Detected version: 0.0.9-SNAPSHOT
+[8mha:////4HpxEc/LaRQ5wPBgZY7lcP2M0XcoNpQ8Qd2SdTrj+/sNAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKCoEFCqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKYhQrk75Npvhw959s4fvgAAAA==[0m[Pipeline] sh
++ curl -X POST http://bracdemo-nexus.eastus.cloudapp.azure.com:9081/api/v1/bom -H 'Content-Type: multipart/form-data' -H 'X-Api-Key: odt_ikgtPlOM_0KqbYcUAFINcreMNhHJchLVK6CUgXSFV' -F projectName=brac-customer -F autoCreate=true -F projectVersion=0.0.9-SNAPSHOT -F bom=@spring-app-1-sbom.json
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 71  449k    0     0   71  320k      0   274k  0:00:01  0:00:01 --:--:--  274k100  449k    0     0  100  449k      0   165k  0:00:02  0:00:02 --:--:--  165k100  449k  100    48  100  449k     16   153k  0:00:03  0:00:02  0:00:01  153k
+{"token":"ca3488aa-cc1e-4a0e-b22b-ac30c051cca2"}
+[8mha:////4IqEEAZCN4cDt4u/IZuBNDVbbCF425D8rA4tNHwucjWcAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIioEFCqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKYhQrk75Npvhw84x9UGvgAAAA==[0m[Pipeline] sh
++ rm -f spring-app-1-sbom.json
+[8mha:////4K+uSTOuOntu6F/+UWzhaGo/dCWS7v80OcC2YEOEwtfTAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIihQYJUaW10vACExvjxLoztkNS8SK+xh+wiETFFqudbeb1hnUMcOJgsNc0WIqdRe9GkxdOHIar4wl7vmDHFNlpbPXUstLNgi0nDUuKElYCNpo6x9GSSbAVvXzIykky1TmF/B0FlFbd4QmFyOYkQ/rCHGB3G1Vk+nn+CmD2PkG5r3PVhw9qzEvpvgAAAA==[0m[Pipeline] }
+[8mha:////4BvaXd6vFVM/pgV6ziw/AuD2CznIE9njBTBBIRddsgt5AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMKRSEGBqNJaaXiBiQ/jxLoztkNS8SK+xh+wiETFFqudbeb1hnUMcOJgRI80WIqdFd6NJi8xcRiujifR80V0TJEdihanljU2C7acEJYUJawkbJA6x9GSSbCVvXqoyiky1TmF/B0llFbf4QmFzOakQvrCHGB3G3Vk+nn+CmD2PkFZ17n2hw9eAqiyvgAAAA==[0m[Pipeline] // dir
+[8mha:////4JVpGs2m7/9DfsyQeSIEGHWwptHuBVN+j2ZcFJgPn//hAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiBFQoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDREKLeHXLv98AFeVfqUvgAAAA==[0m[Pipeline] echo
+Building module in: spring-app-1
+[8mha:////4ApkNpLWUBiA+GEt8Cfi0RoqYbp16i7l9tRsvwAL0ZN3AAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUCHVCTF2jLJwgJCGkjf4vSUo7cSKuxh0IVGLCg2Vbst7zBVUMcKRgWWewdxiVY4MfbU5sotBfPE2sozNThJG8YcJMgrRplyooGVhUlLDisDaoPEWHNsGGd/Iuay/R1qcU8nbgUDp9gwcUPJOTDOlb5gDb66gj4Y/zFwDzkKDcNdn2zedZvQF8XumhwgAAAA==[0m[Pipeline] dir
+Running in /root/workspace/monorepo-vm/spring-app-1
+[8mha:////4DWQA8BX1u5AstDODJHZNG8BIETS5UVyFiDnP/Gsn3efAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0QLAgpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD02yRsvCAAAA[0m[Pipeline] {
+[8mha:////4F8gL863HZiW63UjQf24GGK+sMIKEhUW+NW/mDjzGRh7AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSIEGBqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDhnK7+9Q+vAF9GxrMvgAAAA==[0m[Pipeline] sh
++ mvn clean package -DskipTests
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.example.custmngmnt:customer:jar:0.0.9-SNAPSHOT
+[WARNING] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: mysql:mysql-connector-java:jar -> version (?) vs 8.0.25 @ line 43, column 15
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] ------------------< com.example.custmngmnt:customer >-------------------
+[INFO] Building customer-management 0.0.9-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+Downloading from nexus: http://bracdemo-nexus.eastus.cloudapp.azure.com:8081/repository/maven-central/ch/qos/logback/logback-classic/1.2.5/logback-classic-1.2.5.pom
+Progress (1): 4.1/13 kBProgress (1): 7.8/13 kBProgress (1): 12/13 kB Progress (1): 13 kB                      Downloaded from nexus: http://bracdemo-nexus.eastus.cloudapp.azure.com:8081/repository/maven-central/ch/qos/logback/logback-classic/1.2.5/logback-classic-1.2.5.pom (13 kB at 12 kB/s)
+Downloading from nexus: http://bracdemo-nexus.eastus.cloudapp.azure.com:8081/repository/maven-central/ch/qos/logback/logback-parent/1.2.5/logback-parent-1.2.5.pom
+Progress (1): 4.1/19 kBProgress (1): 8.2/19 kBProgress (1): 12/19 kB Progress (1): 16/19 kBProgress (1): 19 kB                      Downloaded from nexus: http://bracdemo-nexus.eastus.cloudapp.azure.com:8081/repository/maven-central/ch/qos/logback/logback-parent/1.2.5/logback-parent-1.2.5.pom (19 kB at 25 kB/s)
+Downloading from nexus: http://bracdemo-nexus.eastus.cloudapp.azure.com:8081/repository/maven-central/ch/qos/logback/logback-core/1.2.5/logback-core-1.2.5.pom
+Progress (1): 4.1/4.2 kBProgress (1): 4.2 kB                        Downloaded from nexus: http://bracdemo-nexus.eastus.cloudapp.azure.com:8081/repository/maven-central/ch/qos/logback/logback-core/1.2.5/logback-core-1.2.5.pom (4.2 kB at 5.5 kB/s)
+Downloading from nexus: http://bracdemo-nexus.eastus.cloudapp.azure.com:8081/repository/maven-central/mysql/mysql-connector-java/8.0.25/mysql-connector-java-8.0.25.pom
+Progress (1): 2.5 kB                    Downloaded from nexus: http://bracdemo-nexus.eastus.cloudapp.azure.com:8081/repository/maven-central/mysql/mysql-connector-java/8.0.25/mysql-connector-java-8.0.25.pom (2.5 kB at 3.3 kB/s)
+Downloading from nexus: http://bracdemo-nexus.eastus.cloudapp.azure.com:8081/repository/maven-central/ch/qos/logback/logback-classic/1.2.5/logback-classic-1.2.5.jar
+Downloading from nexus: http://bracdemo-nexus.eastus.cloudapp.azure.com:8081/repository/maven-central/ch/qos/logback/logback-core/1.2.5/logback-core-1.2.5.jar
+Downloading from nexus: http://bracdemo-nexus.eastus.cloudapp.azure.com:8081/repository/maven-central/mysql/mysql-connector-java/8.0.25/mysql-connector-java-8.0.25.jar
+Progress (1): 4.1/472 kBProgress (1): 7.8/472 kBProgress (1): 12/472 kB Progress (1): 16/472 kBProgress (1): 20/472 kBProgress (1): 24/472 kBProgress (1): 28/472 kBProgress (1): 32/472 kBProgress (1): 36/472 kBProgress (1): 41/472 kBProgress (1): 45/472 kBProgress (1): 47/472 kBProgress (2): 47/472 kB | 4.1/292 kBProgress (2): 47/472 kB | 7.8/292 kBProgress (3): 47/472 kB | 7.8/292 kB | 0/2.4 MBProgress (3): 47/472 kB | 12/292 kB | 0/2.4 MB Progress (3): 47/472 kB | 14/292 kB | 0/2.4 MBProgress (3): 51/472 kB | 14/292 kB | 0/2.4 MBProgress (3): 55/472 kB | 14/292 kB | 0/2.4 MBProgress (3): 60/472 kB | 14/292 kB | 0/2.4 MBProgress (3): 64/472 kB | 14/292 kB | 0/2.4 MBProgress (3): 68/472 kB | 14/292 kB | 0/2.4 MBProgress (3): 72/472 kB | 14/292 kB | 0/2.4 MBProgress (3): 76/472 kB | 14/292 kB | 0/2.4 MBProgress (3): 80/472 kB | 14/292 kB | 0/2.4 MBProgress (3): 80/472 kB | 18/292 kB | 0/2.4 MBProgress (3): 80/472 kB | 22/292 kB | 0/2.4 MBProgress (3): 80/472 kB | 26/292 kB | 0/2.4 MBProgress (3): 80/472 kB | 30/292 kB | 0/2.4 MBProgress (3): 80/472 kB | 30/292 kB | 0/2.4 MBProgress (3): 80/472 kB | 35/292 kB | 0/2.4 MBProgress (3): 80/472 kB | 35/292 kB | 0/2.4 MBProgress (3): 80/472 kB | 39/292 kB | 0/2.4 MBProgress (3): 80/472 kB | 43/292 kB | 0/2.4 MBProgress (3): 84/472 kB | 43/292 kB | 0/2.4 MBProgress (3): 88/472 kB | 43/292 kB | 0/2.4 MBProgress (3): 92/472 kB | 43/292 kB | 0/2.4 MBProgress (3): 96/472 kB | 43/292 kB | 0/2.4 MBProgress (3): 100/472 kB | 43/292 kB | 0/2.4 MBProgress (3): 105/472 kB | 43/292 kB | 0/2.4 MBProgress (3): 109/472 kB | 43/292 kB | 0/2.4 MBProgress (3): 113/472 kB | 43/292 kB | 0/2.4 MBProgress (3): 117/472 kB | 43/292 kB | 0/2.4 MBProgress (3): 121/472 kB | 43/292 kB | 0/2.4 MBProgress (3): 125/472 kB | 43/292 kB | 0/2.4 MBProgress (3): 129/472 kB | 43/292 kB | 0/2.4 MBProgress (3): 133/472 kB | 43/292 kB | 0/2.4 MBProgress (3): 137/472 kB | 43/292 kB | 0/2.4 MBProgress (3): 140/472 kB | 43/292 kB | 0/2.4 MBProgress (3): 140/472 kB | 47/292 kB | 0/2.4 MBProgress (3): 140/472 kB | 51/292 kB | 0/2.4 MBProgress (3): 140/472 kB | 55/292 kB | 0/2.4 MBProgress (3): 140/472 kB | 55/292 kB | 0.1/2.4 MBProgress (3): 140/472 kB | 59/292 kB | 0.1/2.4 MBProgress (3): 140/472 kB | 59/292 kB | 0.1/2.4 MBProgress (3): 140/472 kB | 63/292 kB | 0.1/2.4 MBProgress (3): 140/472 kB | 63/292 kB | 0.1/2.4 MBProgress (3): 140/472 kB | 67/292 kB | 0.1/2.4 MBProgress (3): 140/472 kB | 67/292 kB | 0.1/2.4 MBProgress (3): 140/472 kB | 71/292 kB | 0.1/2.4 MBProgress (3): 140/472 kB | 76/292 kB | 0.1/2.4 MBProgress (3): 140/472 kB | 80/292 kB | 0.1/2.4 MBProgress (3): 140/472 kB | 84/292 kB | 0.1/2.4 MBProgress (3): 140/472 kB | 88/292 kB | 0.1/2.4 MBProgress (3): 143/472 kB | 88/292 kB | 0.1/2.4 MBProgress (3): 147/472 kB | 88/292 kB | 0.1/2.4 MBProgress (3): 151/472 kB | 88/292 kB | 0.1/2.4 MBProgress (3): 155/472 kB | 88/292 kB | 0.1/2.4 MBProgress (3): 159/472 kB | 88/292 kB | 0.1/2.4 MBProgress (3): 163/472 kB | 88/292 kB | 0.1/2.4 MBProgress (3): 167/472 kB | 88/292 kB | 0.1/2.4 MBProgress (3): 171/472 kB | 88/292 kB | 0.1/2.4 MBProgress (3): 176/472 kB | 88/292 kB | 0.1/2.4 MBProgress (3): 180/472 kB | 88/292 kB | 0.1/2.4 MBProgress (3): 184/472 kB | 88/292 kB | 0.1/2.4 MBProgress (3): 188/472 kB | 88/292 kB | 0.1/2.4 MBProgress (3): 192/472 kB | 88/292 kB | 0.1/2.4 MBProgress (3): 196/472 kB | 88/292 kB | 0.1/2.4 MBProgress (3): 200/472 kB | 88/292 kB | 0.1/2.4 MBProgress (3): 204/472 kB | 88/292 kB | 0.1/2.4 MBProgress (3): 208/472 kB | 88/292 kB | 0.1/2.4 MBProgress (3): 212/472 kB | 88/292 kB | 0.1/2.4 MBProgress (3): 217/472 kB | 88/292 kB | 0.1/2.4 MBProgress (3): 221/472 kB | 88/292 kB | 0.1/2.4 MBProgress (3): 225/472 kB | 88/292 kB | 0.1/2.4 MBProgress (3): 229/472 kB | 88/292 kB | 0.1/2.4 MBProgress (3): 233/472 kB | 88/292 kB | 0.1/2.4 MBProgress (3): 237/472 kB | 88/292 kB | 0.1/2.4 MBProgress (3): 241/472 kB | 88/292 kB | 0.1/2.4 MBProgress (3): 245/472 kB | 88/292 kB | 0.1/2.4 MBProgress (3): 249/472 kB | 88/292 kB | 0.1/2.4 MBProgress (3): 253/472 kB | 88/292 kB | 0.1/2.4 MBProgress (3): 258/472 kB | 88/292 kB | 0.1/2.4 MBProgress (3): 262/472 kB | 88/292 kB | 0.1/2.4 MBProgress (3): 266/472 kB | 88/292 kB | 0.1/2.4 MBProgress (3): 270/472 kB | 88/292 kB | 0.1/2.4 MBProgress (3): 274/472 kB | 88/292 kB | 0.1/2.4 MBProgress (3): 278/472 kB | 88/292 kB | 0.1/2.4 MBProgress (3): 282/472 kB | 88/292 kB | 0.1/2.4 MBProgress (3): 286/472 kB | 88/292 kB | 0.1/2.4 MBProgress (3): 290/472 kB | 88/292 kB | 0.1/2.4 MBProgress (3): 294/472 kB | 88/292 kB | 0.1/2.4 MBProgress (3): 294/472 kB | 88/292 kB | 0.1/2.4 MBProgress (3): 294/472 kB | 92/292 kB | 0.1/2.4 MBProgress (3): 294/472 kB | 96/292 kB | 0.1/2.4 MBProgress (3): 294/472 kB | 100/292 kB | 0.1/2.4 MBProgress (3): 294/472 kB | 104/292 kB | 0.1/2.4 MBProgress (3): 294/472 kB | 108/292 kB | 0.1/2.4 MBProgress (3): 294/472 kB | 111/292 kB | 0.1/2.4 MBProgress (3): 298/472 kB | 111/292 kB | 0.1/2.4 MBProgress (3): 298/472 kB | 114/292 kB | 0.1/2.4 MBProgress (3): 298/472 kB | 118/292 kB | 0.1/2.4 MBProgress (3): 298/472 kB | 122/292 kB | 0.1/2.4 MBProgress (3): 298/472 kB | 126/292 kB | 0.1/2.4 MBProgress (3): 298/472 kB | 130/292 kB | 0.1/2.4 MBProgress (3): 298/472 kB | 134/292 kB | 0.1/2.4 MBProgress (3): 298/472 kB | 139/292 kB | 0.1/2.4 MBProgress (3): 298/472 kB | 143/292 kB | 0.1/2.4 MBProgress (3): 298/472 kB | 143/292 kB | 0.1/2.4 MBProgress (3): 298/472 kB | 143/292 kB | 0.1/2.4 MBProgress (3): 301/472 kB | 143/292 kB | 0.1/2.4 MBProgress (3): 301/472 kB | 147/292 kB | 0.1/2.4 MBProgress (3): 301/472 kB | 151/292 kB | 0.1/2.4 MBProgress (3): 301/472 kB | 155/292 kB | 0.1/2.4 MBProgress (3): 301/472 kB | 159/292 kB | 0.1/2.4 MBProgress (3): 301/472 kB | 163/292 kB | 0.1/2.4 MBProgress (3): 301/472 kB | 167/292 kB | 0.1/2.4 MBProgress (3): 301/472 kB | 171/292 kB | 0.1/2.4 MBProgress (3): 301/472 kB | 175/292 kB | 0.1/2.4 MBProgress (3): 301/472 kB | 180/292 kB | 0.1/2.4 MBProgress (3): 301/472 kB | 184/292 kB | 0.1/2.4 MBProgress (3): 301/472 kB | 188/292 kB | 0.1/2.4 MBProgress (3): 301/472 kB | 192/292 kB | 0.1/2.4 MBProgress (3): 301/472 kB | 196/292 kB | 0.1/2.4 MBProgress (3): 301/472 kB | 200/292 kB | 0.1/2.4 MBProgress (3): 301/472 kB | 204/292 kB | 0.1/2.4 MBProgress (3): 301/472 kB | 208/292 kB | 0.1/2.4 MBProgress (3): 301/472 kB | 212/292 kB | 0.1/2.4 MBProgress (3): 301/472 kB | 216/292 kB | 0.1/2.4 MBProgress (3): 301/472 kB | 220/292 kB | 0.1/2.4 MBProgress (3): 301/472 kB | 225/292 kB | 0.1/2.4 MBProgress (3): 301/472 kB | 229/292 kB | 0.1/2.4 MBProgress (3): 301/472 kB | 233/292 kB | 0.1/2.4 MBProgress (3): 301/472 kB | 237/292 kB | 0.1/2.4 MBProgress (3): 301/472 kB | 241/292 kB | 0.1/2.4 MBProgress (3): 301/472 kB | 245/292 kB | 0.1/2.4 MBProgress (3): 301/472 kB | 249/292 kB | 0.1/2.4 MBProgress (3): 301/472 kB | 253/292 kB | 0.1/2.4 MBProgress (3): 301/472 kB | 257/292 kB | 0.1/2.4 MBProgress (3): 301/472 kB | 257/292 kB | 0.1/2.4 MBProgress (3): 301/472 kB | 257/292 kB | 0.2/2.4 MBProgress (3): 305/472 kB | 257/292 kB | 0.2/2.4 MBProgress (3): 305/472 kB | 261/292 kB | 0.2/2.4 MBProgress (3): 305/472 kB | 266/292 kB | 0.2/2.4 MBProgress (3): 305/472 kB | 270/292 kB | 0.2/2.4 MBProgress (3): 305/472 kB | 274/292 kB | 0.2/2.4 MBProgress (3): 305/472 kB | 278/292 kB | 0.2/2.4 MBProgress (3): 305/472 kB | 282/292 kB | 0.2/2.4 MBProgress (3): 305/472 kB | 286/292 kB | 0.2/2.4 MBProgress (3): 305/472 kB | 290/292 kB | 0.2/2.4 MBProgress (3): 305/472 kB | 292 kB | 0.2/2.4 MB    Progress (3): 305/472 kB | 292 kB | 0.2/2.4 MBProgress (3): 305/472 kB | 292 kB | 0.2/2.4 MBProgress (3): 305/472 kB | 292 kB | 0.2/2.4 MBProgress (3): 309/472 kB | 292 kB | 0.2/2.4 MB                                              Downloaded from nexus: http://bracdemo-nexus.eastus.cloudapp.azure.com:8081/repository/maven-central/ch/qos/logback/logback-classic/1.2.5/logback-classic-1.2.5.jar (292 kB at 107 kB/s)
+Progress (2): 309/472 kB | 0.2/2.4 MBProgress (2): 309/472 kB | 0.2/2.4 MBProgress (2): 309/472 kB | 0.2/2.4 MBProgress (2): 309/472 kB | 0.3/2.4 MBProgress (2): 309/472 kB | 0.3/2.4 MBProgress (2): 309/472 kB | 0.3/2.4 MBProgress (2): 313/472 kB | 0.3/2.4 MBProgress (2): 317/472 kB | 0.3/2.4 MBProgress (2): 319/472 kB | 0.3/2.4 MBProgress (2): 319/472 kB | 0.3/2.4 MBProgress (2): 319/472 kB | 0.3/2.4 MBProgress (2): 319/472 kB | 0.3/2.4 MBProgress (2): 319/472 kB | 0.3/2.4 MBProgress (2): 319/472 kB | 0.3/2.4 MBProgress (2): 319/472 kB | 0.4/2.4 MBProgress (2): 324/472 kB | 0.4/2.4 MBProgress (2): 328/472 kB | 0.4/2.4 MBProgress (2): 332/472 kB | 0.4/2.4 MBProgress (2): 335/472 kB | 0.4/2.4 MBProgress (2): 335/472 kB | 0.4/2.4 MBProgress (2): 335/472 kB | 0.4/2.4 MBProgress (2): 335/472 kB | 0.4/2.4 MBProgress (2): 335/472 kB | 0.4/2.4 MBProgress (2): 335/472 kB | 0.4/2.4 MBProgress (2): 335/472 kB | 0.4/2.4 MBProgress (2): 335/472 kB | 0.4/2.4 MBProgress (2): 335/472 kB | 0.5/2.4 MBProgress (2): 339/472 kB | 0.5/2.4 MBProgress (2): 344/472 kB | 0.5/2.4 MBProgress (2): 348/472 kB | 0.5/2.4 MBProgress (2): 352/472 kB | 0.5/2.4 MBProgress (2): 352/472 kB | 0.5/2.4 MBProgress (2): 352/472 kB | 0.5/2.4 MBProgress (2): 352/472 kB | 0.5/2.4 MBProgress (2): 352/472 kB | 0.5/2.4 MBProgress (2): 352/472 kB | 0.5/2.4 MBProgress (2): 352/472 kB | 0.5/2.4 MBProgress (2): 352/472 kB | 0.5/2.4 MBProgress (2): 356/472 kB | 0.5/2.4 MBProgress (2): 360/472 kB | 0.5/2.4 MBProgress (2): 364/472 kB | 0.5/2.4 MBProgress (2): 368/472 kB | 0.5/2.4 MBProgress (2): 372/472 kB | 0.5/2.4 MBProgress (2): 376/472 kB | 0.5/2.4 MBProgress (2): 376/472 kB | 0.6/2.4 MBProgress (2): 376/472 kB | 0.6/2.4 MBProgress (2): 376/472 kB | 0.6/2.4 MBProgress (2): 376/472 kB | 0.6/2.4 MBProgress (2): 376/472 kB | 0.6/2.4 MBProgress (2): 376/472 kB | 0.6/2.4 MBProgress (2): 379/472 kB | 0.6/2.4 MBProgress (2): 383/472 kB | 0.6/2.4 MBProgress (2): 387/472 kB | 0.6/2.4 MBProgress (2): 391/472 kB | 0.6/2.4 MBProgress (2): 393/472 kB | 0.6/2.4 MBProgress (2): 397/472 kB | 0.6/2.4 MBProgress (2): 402/472 kB | 0.6/2.4 MBProgress (2): 406/472 kB | 0.6/2.4 MBProgress (2): 410/472 kB | 0.6/2.4 MBProgress (2): 414/472 kB | 0.6/2.4 MBProgress (2): 414/472 kB | 0.6/2.4 MBProgress (2): 414/472 kB | 0.6/2.4 MBProgress (2): 414/472 kB | 0.7/2.4 MBProgress (2): 414/472 kB | 0.7/2.4 MBProgress (2): 414/472 kB | 0.7/2.4 MBProgress (2): 414/472 kB | 0.7/2.4 MBProgress (2): 414/472 kB | 0.7/2.4 MBProgress (2): 414/472 kB | 0.7/2.4 MBProgress (2): 414/472 kB | 0.8/2.4 MBProgress (2): 414/472 kB | 0.8/2.4 MBProgress (2): 418/472 kB | 0.8/2.4 MBProgress (2): 422/472 kB | 0.8/2.4 MBProgress (2): 426/472 kB | 0.8/2.4 MBProgress (2): 428/472 kB | 0.8/2.4 MBProgress (2): 432/472 kB | 0.8/2.4 MBProgress (2): 436/472 kB | 0.8/2.4 MBProgress (2): 440/472 kB | 0.8/2.4 MBProgress (2): 444/472 kB | 0.8/2.4 MBProgress (2): 449/472 kB | 0.8/2.4 MBProgress (2): 453/472 kB | 0.8/2.4 MBProgress (2): 457/472 kB | 0.8/2.4 MBProgress (2): 461/472 kB | 0.8/2.4 MBProgress (2): 465/472 kB | 0.8/2.4 MBProgress (2): 469/472 kB | 0.8/2.4 MBProgress (2): 472 kB | 0.8/2.4 MB    Progress (2): 472 kB | 0.8/2.4 MBProgress (2): 472 kB | 0.8/2.4 MBProgress (2): 472 kB | 0.8/2.4 MBProgress (2): 472 kB | 0.8/2.4 MBProgress (2): 472 kB | 0.8/2.4 MBProgress (2): 472 kB | 0.8/2.4 MB                                 Downloaded from nexus: http://bracdemo-nexus.eastus.cloudapp.azure.com:8081/repository/maven-central/ch/qos/logback/logback-core/1.2.5/logback-core-1.2.5.jar (472 kB at 102 kB/s)
+Progress (1): 0.9/2.4 MBProgress (1): 0.9/2.4 MBProgress (1): 0.9/2.4 MBProgress (1): 0.9/2.4 MBProgress (1): 0.9/2.4 MBProgress (1): 0.9/2.4 MBProgress (1): 0.9/2.4 MBProgress (1): 1.0/2.4 MBProgress (1): 1.0/2.4 MBProgress (1): 1.0/2.4 MBProgress (1): 1.0/2.4 MBProgress (1): 1.0/2.4 MBProgress (1): 1.0/2.4 MBProgress (1): 1.0/2.4 MBProgress (1): 1.0/2.4 MBProgress (1): 1.1/2.4 MBProgress (1): 1.1/2.4 MBProgress (1): 1.1/2.4 MBProgress (1): 1.1/2.4 MBProgress (1): 1.1/2.4 MBProgress (1): 1.1/2.4 MBProgress (1): 1.1/2.4 MBProgress (1): 1.2/2.4 MBProgress (1): 1.2/2.4 MBProgress (1): 1.2/2.4 MBProgress (1): 1.2/2.4 MBProgress (1): 1.2/2.4 MBProgress (1): 1.2/2.4 MBProgress (1): 1.2/2.4 MBProgress (1): 1.2/2.4 MBProgress (1): 1.3/2.4 MBProgress (1): 1.3/2.4 MBProgress (1): 1.3/2.4 MBProgress (1): 1.3/2.4 MBProgress (1): 1.3/2.4 MBProgress (1): 1.3/2.4 MBProgress (1): 1.3/2.4 MBProgress (1): 1.3/2.4 MBProgress (1): 1.4/2.4 MBProgress (1): 1.4/2.4 MBProgress (1): 1.4/2.4 MBProgress (1): 1.4/2.4 MBProgress (1): 1.4/2.4 MBProgress (1): 1.4/2.4 MBProgress (1): 1.4/2.4 MBProgress (1): 1.4/2.4 MBProgress (1): 1.5/2.4 MBProgress (1): 1.5/2.4 MBProgress (1): 1.5/2.4 MBProgress (1): 1.5/2.4 MBProgress (1): 1.5/2.4 MBProgress (1): 1.5/2.4 MBProgress (1): 1.5/2.4 MBProgress (1): 1.5/2.4 MBProgress (1): 1.6/2.4 MBProgress (1): 1.6/2.4 MBProgress (1): 1.6/2.4 MBProgress (1): 1.6/2.4 MBProgress (1): 1.6/2.4 MBProgress (1): 1.6/2.4 MBProgress (1): 1.6/2.4 MBProgress (1): 1.6/2.4 MBProgress (1): 1.7/2.4 MBProgress (1): 1.7/2.4 MBProgress (1): 1.7/2.4 MBProgress (1): 1.7/2.4 MBProgress (1): 1.7/2.4 MBProgress (1): 1.7/2.4 MBProgress (1): 1.7/2.4 MBProgress (1): 1.7/2.4 MBProgress (1): 1.8/2.4 MBProgress (1): 1.8/2.4 MBProgress (1): 1.8/2.4 MBProgress (1): 1.8/2.4 MBProgress (1): 1.8/2.4 MBProgress (1): 1.8/2.4 MBProgress (1): 1.8/2.4 MBProgress (1): 1.8/2.4 MBProgress (1): 1.9/2.4 MBProgress (1): 1.9/2.4 MBProgress (1): 1.9/2.4 MBProgress (1): 1.9/2.4 MBProgress (1): 1.9/2.4 MBProgress (1): 1.9/2.4 MBProgress (1): 1.9/2.4 MBProgress (1): 1.9/2.4 MBProgress (1): 2.0/2.4 MBProgress (1): 2.0/2.4 MBProgress (1): 2.0/2.4 MBProgress (1): 2.0/2.4 MBProgress (1): 2.0/2.4 MBProgress (1): 2.0/2.4 MBProgress (1): 2.0/2.4 MBProgress (1): 2.0/2.4 MBProgress (1): 2.1/2.4 MBProgress (1): 2.1/2.4 MBProgress (1): 2.1/2.4 MBProgress (1): 2.1/2.4 MBProgress (1): 2.1/2.4 MBProgress (1): 2.1/2.4 MBProgress (1): 2.1/2.4 MBProgress (1): 2.1/2.4 MBProgress (1): 2.2/2.4 MBProgress (1): 2.2/2.4 MBProgress (1): 2.2/2.4 MBProgress (1): 2.2/2.4 MBProgress (1): 2.2/2.4 MBProgress (1): 2.2/2.4 MBProgress (1): 2.2/2.4 MBProgress (1): 2.2/2.4 MBProgress (1): 2.3/2.4 MBProgress (1): 2.3/2.4 MBProgress (1): 2.3/2.4 MBProgress (1): 2.3/2.4 MBProgress (1): 2.3/2.4 MBProgress (1): 2.3/2.4 MBProgress (1): 2.3/2.4 MBProgress (1): 2.3/2.4 MBProgress (1): 2.3/2.4 MBProgress (1): 2.4/2.4 MBProgress (1): 2.4/2.4 MBProgress (1): 2.4/2.4 MBProgress (1): 2.4/2.4 MBProgress (1): 2.4/2.4 MBProgress (1): 2.4/2.4 MBProgress (1): 2.4 MB                        Downloaded from nexus: http://bracdemo-nexus.eastus.cloudapp.azure.com:8081/repository/maven-central/mysql/mysql-connector-java/8.0.25/mysql-connector-java-8.0.25.jar (2.4 MB at 204 kB/s)
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ customer ---
+[INFO] Deleting /root/workspace/monorepo-vm/spring-app-1/target
+[INFO] 
+[INFO] --- maven-resources-plugin:3.2.0:resources (default-resources) @ customer ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] Copying 1 resource
+[INFO] Copying 0 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ customer ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 13 source files to /root/workspace/monorepo-vm/spring-app-1/target/classes
+[INFO] /root/workspace/monorepo-vm/spring-app-1/target/generated-sources/annotations/com/example/custmngmnt/customermanagement/util/mappers/CustomerMapperImpl.java: /root/workspace/monorepo-vm/spring-app-1/target/generated-sources/annotations/com/example/custmngmnt/customermanagement/util/mappers/CustomerMapperImpl.java uses unchecked or unsafe operations.
+[INFO] /root/workspace/monorepo-vm/spring-app-1/target/generated-sources/annotations/com/example/custmngmnt/customermanagement/util/mappers/CustomerMapperImpl.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.2.0:testResources (default-testResources) @ customer ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] skip non existing resourceDirectory /root/workspace/monorepo-vm/spring-app-1/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ customer ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /root/workspace/monorepo-vm/spring-app-1/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.2:test (default-test) @ customer ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:3.2.0:jar (default-jar) @ customer ---
+[INFO] Building jar: /root/workspace/monorepo-vm/spring-app-1/target/customer-0.0.9-SNAPSHOT.jar
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.5.4:repackage (repackage) @ customer ---
+[INFO] Replacing main artifact with repackaged archive
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  20.552 s
+[INFO] Finished at: 2026-05-07T13:16:39+05:30
+[INFO] ------------------------------------------------------------------------
+[8mha:////4M0cHcr7+ekOvSsaFU5YRsLmeR9lz85IL0ll28P9NPx0AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSICEkRJXWcsMLTGyME+vO2A5JxYv4Gn8gEImKLVY728zzBcsU4cjRYmuoc5Qah8H3dlo4cOwungds+YwNU2JvUJpBsjb1jJKzgTlFCQsBK0ON5+TIZliLVt1V5RXZ6pTj9B0ElE7f4AGFmMxZxfyFMcLm2uvE9PP8FcAYQoZyu//U7g1K83O2vgAAAA==[0m[Pipeline] }
+[8mha:////4EW0jJPvh0jIlMQumPsrFhrGxmKhZ7N9qqYUFKv/D8JZAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSIAqEqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFBu95/avQFVcSbkvgAAAA==[0m[Pipeline] // dir
+[8mha:////4D1+mOcXWCxok4WSAuwdWPsBdJutI56bz61p0yL3TPKaAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICElQoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDREKHeHXPvt8AHfhtn1vgAAAA==[0m[Pipeline] echo
+Pushing module in: spring-app-1
+[8mha:////4NHP8HAbV2RfA0uDSeaVudr7he6K4302KYHvYFWFR5hjAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUlWBCTF2jLpwgNCEkjf4vSUo6cSKuxh0IVGLCg2Vbst7zBVXwcCSvmVU4GAy9YaObdE4skR8ujhKzdGY9YSCnWKdSR1K1S+0oKlhUlLDisFbYOwoGdYQNt+IuaidQ16fo83bgUBp5gwcUPJOj8PFbZg/b6yQD4Y/zFwDzGKFs9tl2zedZvQHkIt//wgAAAA==[0m[Pipeline] dir
+Running in /root/workspace/monorepo-vm/spring-app-1
+[8mha:////4FPSOk5cUmot/iyHKDEyIFL3hHfhu/brRhhZkv6Zf3z8AAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUIDbE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5AfdrPt52fxAdhUMVHCAAAA[0m[Pipeline] {
+[8mha:////4IfAc2ncg0ZDu7H6SgdFOus1w08JIFZJOOMXq0Hm0BZIAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiAR2iSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwZyv32U7vwBvbls1O+AAAA[0m[Pipeline] sh
++ docker run --rm -v /root/workspace/monorepo-vm/spring-app-1:/app -w /app maven:3.8.6-openjdk-8 mvn help:evaluate -Dexpression=project.version -q -DforceStdout
+[8mha:////4IOiMnQ8nN7XGEZ1MSfxKPgWMypqljIVQprNLi1RnZ4cAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIioXSIitZKwwtMYowd686xHZyKF/E1/kAgEhVbrHa2mecL1jHAkYNGq6g3FFuD3o16Xpg59FfHGS1fsGWK7BQ2KjfcqdOCDScFS4oSVgI2ilrH0ZBOsBVW3mXlJOnqnML8HQSUphvgAYWYzUmG9IUpwO42dpHp5/krgMknKOv9p2r/BjFz8hy+AAAA[0m[Pipeline] sh
++ docker run --rm -v /root/workspace/monorepo-vm/spring-app-1:/app -w /app maven:3.8.6-openjdk-8 mvn help:evaluate -Dexpression=project.artifactId -q -DforceStdout
+[8mha:////4MA2esmRT+xdPegdMsVj5D2HkyGC60cnha0sLo+uN675AAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiIagQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUO62n9qHN3BC6QW+AAAA[0m[Pipeline] nexusArtifactUploader
+Uploading artifact customer-0.0.9-SNAPSHOT.jar started....
+GroupId: com.brac.demo
+ArtifactId: customer
+Classifier: 
+Type: jar
+Version: 0.0.9-SNAPSHOT
+File: customer-0.0.9-SNAPSHOT.jar
+Repository:maven-snapshots
+Downloading: http://bracdemo-nexus.eastus.cloudapp.azure.com:8081/repository/maven-snapshots/com/brac/demo/customer/0.0.9-SNAPSHOT/maven-metadata.xml
+Uploading: http://bracdemo-nexus.eastus.cloudapp.azure.com:8081/repository/maven-snapshots/com/brac/demo/customer/0.0.9-SNAPSHOT/customer-0.0.9-20260507.074717-1.jar
+10 % completed (5.8 MB / 55 MB).
+20 % completed (12 MB / 55 MB).
+30 % completed (17 MB / 55 MB).
+40 % completed (23 MB / 55 MB).
+50 % completed (28 MB / 55 MB).
+60 % completed (34 MB / 55 MB).
+70 % completed (39 MB / 55 MB).
+80 % completed (45 MB / 55 MB).
+90 % completed (50 MB / 55 MB).
+100 % completed (55 MB / 55 MB).
+[8mha:////4EN+4GTa0w7SPfFbyHwX0VQjqj04Q/sALC5GLrANgm5yAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiIUSDqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFDu9p/avgFq/vIBvgAAAA==[0m[Pipeline] }
+[8mha:////4JVFFZfH2omii8dNnLCxCqtO09DZNOHIHL5h35e49tJ8AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiJCQKRJXWcsMLTGyME+vO2A5JxYv4Gn8gEImKLVY728zzBcsU4cjRYmuoc5Qah8H3dlo4cOwungds+YwNU2JvUJpBsjb1jJKzgTlFCQsBK0ON5+TIZliLVt1V5RXZ6pTj9B0ElE7f4AGFmMxZxfyFMcLm2uvE9PP8FcAYQoZyt//U9g11fKdTvgAAAA==[0m[Pipeline] // dir
+[8mha:////4IPKR/SPSxNrOai0CLJQ5l8Bkytv2/21EvU4z5MqW4+/AAAAqB+LCAAAAAAAAP9tjUEKwjAURH8rXbh16SFSBAVBunIbuvEEsYkxafi/JqnpyhN5Ne9gtODKWQwzA8N7vqAKHhrymlmFvcHQGTa4UefEEvn+4igxS2fWEQZyirUqtSTVca4tRQWzihIWHJYKO0fBoI6w4lbcRe0E6voUfd4OHEojb/CAgmdyFD5+y+RhfR1lIPxx/gJgGiKUm1227f7zrN4sc9DYwgAAAA==[0m[Pipeline] dir
+Running in /root/workspace/monorepo-vm/spring-app-1
+[8mha:////4M2g3FSCLqzqO5mUMwK8kn2QansODpChg1HygFvJjrbCAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0YQAhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD56au0DCAAAA[0m[Pipeline] {
+[8mha:////4Hd+V3OYDClF5HpvnyYSselIYBOZnxDZ7pj5bG/gNT2kAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJCAQVCqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKYhQrk75Npvhw/4iFt7vgAAAA==[0m[Pipeline] sh
++ docker run --rm -v /root/workspace/monorepo-vm/spring-app-1:/app -w /app maven:3.8.6-openjdk-8 mvn help:evaluate -Dexpression=project.version -q -DforceStdout
+Uploaded: http://bracdemo-nexus.eastus.cloudapp.azure.com:8081/repository/maven-snapshots/com/brac/demo/customer/0.0.9-SNAPSHOT/customer-0.0.9-20260507.074717-1.jar (55 MB at 447 kB/s)
+Uploading: http://bracdemo-nexus.eastus.cloudapp.azure.com:8081/repository/maven-snapshots/com/brac/demo/customer/0.0.9-SNAPSHOT/maven-metadata.xml
+Uploaded: http://bracdemo-nexus.eastus.cloudapp.azure.com:8081/repository/maven-snapshots/com/brac/demo/customer/0.0.9-SNAPSHOT/maven-metadata.xml (598 B at 403 B/s)
+Uploading artifact customer-0.0.9-SNAPSHOT.jar completed.
+[8mha:////4IS3VZhZLU0pvjHnXN8ipycdpDMB3i11Zz2y+9BGf5IFAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiJCgQSkVrueEFJjHGiXUXbAen4kV8jT9gEYmKLVY728zrDcvgoWZvsNPUWwqNxcGNJi9M7Pur44QdX7BhCuw0Sp0kt/o0o+SoYU5RwkLASlPjOFgyEdaiUw9VOUWmOkefv6OA0rZ3eEIhsjkqH78wedjcxjYw/Tx/BTANEcrdIdd+O3wAublAYr4AAAA=[0m[Pipeline] sh
++ docker run --rm -v /root/workspace/monorepo-vm/spring-app-1:/app -w /app maven:3.8.6-openjdk-8 mvn help:evaluate -Dexpression=project.artifactId -q -DforceStdout
+[8mha:////4E3aKxgTwRtaNG5QibxoYGVKF+xiczNcwkyJoHA6dnuAAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUQjAg1Ik16sIJQhNC0uj/kqSkEyfiatyBQCUmPFi2Jes9X1AFDw15zazC3mDoDBvcqHNiiXx/cZSYpTPrCAM5xVqVWpLqONeWooJZRQkLDkuFnaNgUEdYcSvuonYCdX2KPm8HDqWRN3hAwTM5Ch+/ZfKwvo4yEP44fwEwDRHK7T7bbvN5Vm8pvoVNwgAAAA==[0m[Pipeline] withCredentials
+Masking supported pattern matches of $PK or $NEXUS_USER or $NEXUS_PWD
+[8mha:////4KnE2pEtwCJ85RkpJ4NjXBWRxRcYH5NIrDxxcr5RB2vqAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUAjEhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYL8sJttPz+LD6emXT7CAAAA[0m[Pipeline] {
+[8mha:////4HR1P2clJQsPRFhMPmS4DLC9WjBOAMRjB4S8dl1vqWcNAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSABWiSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwZyv32U7vwBiwS7Xe+AAAA[0m[Pipeline] sh
+Warning: A secret was passed to "sh" using Groovy String interpolation, which is insecure.
+		 Affected argument(s) used the following variable(s): [PK]
+		 See https://jenkins.io/redirect/groovy-string-interpolation for details.
++ ssh -o StrictHostKeyChecking=no -i **** app@192.168.85.193 '
+                        docker stop customer || true &&                         docker rm customer || true &&                         rm -f /home/app/*.jar
+                    '
+customer
+customer
++ scp -o StrictHostKeyChecking=no -i **** target/customer-0.0.9-SNAPSHOT.jar app@192.168.85.193:/home/app/
++ ssh -o StrictHostKeyChecking=no -i **** app@192.168.85.193 '
+                        docker run -d --name customer -p 8081:8080                             --network mysql-container_mysql                             -v /home/app/customer-0.0.9-SNAPSHOT.jar:/app.jar                             -e SPRING_DATASOURCE_URL='\''jdbc:mysql://mysql-container:3306/customer?createDatabaseIfNotExist=true'\''                             -e SPRING_DATASOURCE_USERNAME=root                             -e SPRING_DATASOURCE_PASSWORD='\'''\''                             maven:3.8.6-openjdk-8 java -jar /app.jar
+                    '
+667c6c010cf89c03cf8659f7f33afc868d1828abbc8ed42a2476b5932de67bea
+[8mha:////4LLSaoqSKszHqrPIsH9ACxTVoSRa57XKGkrB6/t8klmBAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSoFSIitZKwwtMYowd686xHZyKF/E1/kAgEhVbrHa2mecL1jHAkYNGq6g3FFuD3o16Xpg59FfHGS1fsGWK7BQ2KjfcqdOCDScFS4oSVgI2ilrH0ZBOsBVW3mXlJOnqnML8HQSUphvgAYWYzUmG9IUpwO42dpHp5/krgMn7BGVdf2r/BqeGDU++AAAA[0m[Pipeline] }
+[8mha:////4EZqEaSmFZAmE8uz3zXv+4e2fVzKZfGZaluN1pSI4jW0AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiIUGDqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFDu9p/avgGfxJ6+vgAAAA==[0m[Pipeline] // withCredentials
+[8mha:////4MrUPqjftPh4U+OREEfJBGclzyXvfSPJ3jtoDtC2h6MQAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOLSgBBCqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDu9rm2hw/z/wv7vgAAAA==[0m[Pipeline] }
+[8mha:////4JCnI+VbBLIb2QtgzhMwyAgCL6lr9lmxZYNSNMQv2KjkAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOLSgBQJUaW10vACExvjxLoztkNS8SK+xh+wiETFFqudbeb1hnUMcOJgsNc0WIqdRe9GkxdOHIar4wl7vmDHFNlpbPXUstLNgi0nDUuKElYCNpo6x9GSSbAVvXzIykky1TmF/B0FlFbd4QmFyOYkQ/rCHGB3G1Vk+nn+CmD2PkF5qHPt6w+wfVp9vgAAAA==[0m[Pipeline] // dir
+[8mha:////4M9G4a8sBKMqWMLPHXntUYlUsEh6yfNJBGYq081wvZYSAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMIRRQqEqNJaaXiBiQ/jxLoztkNS8SK+xh+wiETFFqudbeb1hnUMcOJgRI80WIqdFd6NJi8xcRiujifR80V0TJEdihanljU2C7acEJYUJawkbJA6x9GSSbCVvXqoyiky1TmF/B0llFbf4QmFzOakQvrCHGB3G3Vk+nn+CmD2PkFZH3Lt6w/tJsC1vgAAAA==[0m[Pipeline] }
+[8mha:////4JVGn9+YufU5w+/5JabbPR+wFAHl7UcpAdXEHyzSkGvWAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICEqJBqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFAetrl2+w8uXSDUvgAAAA==[0m[Pipeline] // script
+[8mha:////4EOwMh9LByJonYvpYwaILPn8ddfJj69zuIR3/sl7quoqAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKiCIkGUaW10vACExvjxLoztkNS8SK+xh+wiETFFqudbeb1hnUMcOJgsNc0WIqdRe9GkxdOHIar4wl7vmDHFNlpbPXUstLNgi0nDUuKElYCNpo6x9GSSbAVvXzIykky1TmF/B0FlFbd4QmFyOYkQ/rCHGB3G1Vk+nn+CmD2PkF5qHPV+w8oGxiBvgAAAA==[0m[Pipeline] }
+[8mha:////4P5cHJ8SQkF4S/jdasJN6OcDO96SzXbMrOJK7vDhTVHDAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMIRKWgQVVorDS8w8WGcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThyM6JEGS7GzwrvR5CUmDsPV8SR6voiOKbJD0eLUssZmwZYTwpKihJWEDVLnOFoyCbayVw9VOUWmOqeQv6OE0uo7PKGQ2ZxUSF+YA+xuo45MP89fAczeJygPda59/QEQWYtwvgAAAA==[0m[Pipeline] // stage
+[8mha:////4N8FOkuygZ520JW7fVVV50UZrXDq49lDm3FGl9r3tKDTAAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYRTIKVBVLSWG15gEmOcWHfBvpBUvIiv8QcMkajYamel1TxfUKYIB4pOdhZ7j6nxcgijy01OFPtLoEl2dJYNYaJgpbaTptYeF9TEFpaIAlYK1habQMmjY9ioztxNFQy66sQxb3sFhW9v8AChsplN5C/MEbbXsU2EP89fAcwDg6gZinr3OZZvVxF1SsEAAAA=[0m[Pipeline] stage
+[8mha:////4CdDsBZRUdyp5I4NmwVASe2IaLwA5vJ8Ce7GoVQLeuiEAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0ALEgpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYL8sJttPz+LD7KBoKTCAAAA[0m[Pipeline] { (Build app-2)
+[8mha:////4EYU4IJ0Qgj3aKf1LSdvW2s7+7Ou5xX++y8r5OuP9rCnAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0ARbE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5AfdrPt52fxAZRHx0bCAAAA[0m[Pipeline] script
+[8mha:////4DiAyWubky/H/86B9n/Uer63RmxtwomBJWEiLV+VUDYJAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+DOrAycoh0ogtiYo26cILQhJA0+r9NUtKJE3E17kBLJSY8WLYl673eUMYAJwqGO42dxdha3vvRzIlnCt3NU+aOrrwljOQ1b3RuSOnzWhtKGlYVDDYCthpbT9GiSbATTj5k5SWa6pLCvB0FMKsGeEIhZnKSIX3LFGB/H1Uk/HH+AmDqE7D6sFi9PMsP+urdAcIAAAA=[0m[Pipeline] {
+[8mha:////4HPWBo+lSUSO9vZ5pzhfYtIsrZE+/mi6dPqF5nb7auyKAAAAox+LCAAAAAAAAP9tjTESwiAURH/iWNhaegjSxcKxsmVoPAEmiBDmfwJEUnkir+YdRDNj5RY7+7Z5zxesY4AjBc2swsFg7AzzbtJlsUxhuDrKzNKFdYSRnGJCZUG9Oi0oKClYUtWw4rBR2DmKBnWCLbfyLhsnUTfnFMp34FCbfoQHVLyYkwzpC3OA3W3qI+HP81cAs09Qt+2n9v4N8tcxgr4AAAA=[0m[Pipeline] echo
+Detected changes in spring-app-2.
+[8mha:////4HPbYrEqsceFgEzitjuB6xR0N2RAj+Y9AAdC8hVi47PZAAAApB+LCAAAAAAAAP9tjbEOwiAURV9rHFwd/Qi6NSbGyZWw+AXYIkLJexSodPKL/DX/QbSJk3e4uecu5/mCdQxwpKCZVTgYjJ1h3k26LJYpDFdHmVm6sI4wklNMqCyoV6cFBSUFS6oaVhw2CjtH0aBOsOVW3mXjJOrmnEL5Dhxq04/wgIoXc5IhfWEOsLtNfST8ef4KYPYJ6rb91N6/AT3LqQW+AAAA[0m[Pipeline] echo
+Scanning: spring-app-2
+[8mha:////4ICODDQF3cYcIwtSTTLxCX9aOJBvtg//ZbnBGVk+G/NNAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0q4QQE2uUhROEJoSk0f9tkpJOnIircQdaKjHhwbItWe/1hioGOFEwzGnsLMbWst6PZk4sU+hunjJzdGUtYSSvmdBZkNLntQpKGlYVJWw4bDW2nqJFk2DHnXzI2ks09SWFeTtyKK0a4AkFn8lJhvQtU4D9fVSR8Mf5C4CpT1A2zWKH5Vl9AC4+aWnCAAAA[0m[Pipeline] dir
+Running in /root/workspace/monorepo-vm/spring-app-2
+[8mha:////4Fc3M8zU8NSPxsqRkWFaxy3AClri/dxiMQsiKy8HoRZZAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoiUCYRQJ9aoCycITQhJo/9LkpJOnIircQcClZjwYNmWrPd8QRU8NOQ1swp7g6EzbHCjzokl8v3FUWKWzqwjDOQUa1VqSarjXFuKCmYVJSw4LBV2joJBHWHFrbiL2gnU9Sn6vB04lEbe4AEFz+QofPyWycP6OspA+OP8BcA0RCi3+2y7zedZvQGUkOl7wgAAAA==[0m[Pipeline] {
+[8mha:////4Fz1v7Cww5dif2M2GQb1hSJDCqdWTHkSJspd/eIGlfddAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICFQWiSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwZyv32U7vwBucv03q+AAAA[0m[Pipeline] sh
++ rm -f spring-app-2-sbom.json
+[8mha:////4J+TI8Ml0PTANGB4Ce1/cyVv09DYn86MVW3WjwKX33vNAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKCaCgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUO63n9qFNyR8/lG+AAAA[0m[Pipeline] sh
++ docker run --rm -v /root/workspace/monorepo-vm/spring-app-2:/workspace -v /root/.cache/trivy:/root/.cache/trivy aquasec/trivy:latest fs --format cyclonedx --scanners vuln --output /workspace/spring-app-2-sbom.json /workspace
+2026-05-07T07:50:16Z	INFO	[vuln] Vulnerability scanning is enabled
+2026-05-07T07:50:19Z	INFO	Number of language-specific files	num=1
+2026-05-07T07:50:19Z	INFO	[pom] Detecting vulnerabilities...
+[8mha:////4FI3veLYRSrdBz8fJXVVae0C3p849m90y47HM4EjsSSuAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKCREGBqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFDud5/avgGrR/SlvgAAAA==[0m[Pipeline] }
+[8mha:////4AJcmmo7UlDC7OWXAB2XS3EFoCvS8333J0G7m6Mqrn4SAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOLSIBBCqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDut7l2hw/2/jbYvgAAAA==[0m[Pipeline] // dir
+[8mha:////4COq4kuOnRku9+GLmDIC/G56eleIxmoYz30BRujD5fUcAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMKpCAWiSmul4QUmPowT687YDknFi/gaf8AiEhVbrHa2mdcb1jHAiYMRPdJgKXZWeDeavMTEYbg6nkTPF9ExRXYoWpxa1tgs2HJCWFKUsJKwQeocR0smwVb26qEqp8hU5xTyd5RQWn2HJxQym5MK6QtzgN1t1JHp5/krgNknKOs612HvP0ffxbG+AAAA[0m[Pipeline] echo
+Exporting spring-app-2 SBOM
+[8mha:////4M1x928x4JorMqMJ2haz3nTvHcRl+/ugEJkaiioPDb0jAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMLpQoGoaC03vMAkxtix7ox9Ial4EV/jD1hEomKL1c4283rDOic4UrLCGxwc5s6JGEZblpgoDddAk/B0ER1hpmCEMpOi3pwWVMQGllQ1rCRsDHaBskPLsJVeP3QTNNrmzKl8Bwm16+/whEoWM+vEX5gT7G5jnwl/nr8CmCND3bal9m38AISM6Jq+AAAA[0m[Pipeline] sh
++ docker run --rm -v /root/workspace/monorepo-vm/spring-app-2:/app -w /app maven:3.8.6-openjdk-8 mvn help:evaluate -Dexpression=project.artifactId -q -DforceStdout
+[8mha:////4Nzz8mbY0CiTOnjPuYmi10VF9/V+ILtUjLjghmVH23InAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMLpkgJR0VppeIGJjXFi3Tn2haTiRXyNP2ARiYotVjvbzOsN2xThRNGK3uDgMHVOBD/ZvMRMcbh5mkVPV9ERJvJGtGZuSZvzii2xgTVFCRsJO4Odp+TQMuxlrx6q8gptdeGYv6OE0ukRnlDIbGYV+QtLhMN90onw5/krgCUwlHWdq2nCB8W984O+AAAA[0m[Pipeline] sh
++ docker run --rm -v /root/workspace/monorepo-vm/spring-app-2:/app -w /app maven:3.8.6-openjdk-8 mvn help:evaluate -Dexpression=project.version -q -DforceStdout
+[8mha:////4Il5K/3lsh0qQ07SZuAyAG0vKBodLMgwI3YLBtOoXFgrAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0K0iIqWvUhROEJoSk0f8lSUknTsTVuAOBSkx4sGxL1nu+oAoejuQ1swoHg6E3bHSTzokl8sPFUWKWzqwnDOQU61TqSKp2qR1FBYuKElYc1gp7R8GgjrDhVtxF7QTq+hR93g4cSiNv8ICCZ3IUPn7L7GF7nWQg/HH+AmAeI5RNk223/zyrNz/mQgTCAAAA[0m[Pipeline] dir
+Running in /root/workspace/monorepo-vm/spring-app-2
+[8mha:////4ElTR10YCM408joVZBRHou1IIQeTDThSBukPR6IOncJJAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0BISYukZZOEFoQkgb/V9+UtqJE3E17kBLJSY8WLYl673eUESGE7ETjcXWY6y96ELvpiQG4vYaaBANXURNGClYoeygyNhqqYqShUVZDisJa4t1oOjRJdjIRj90GTS68px42o4Scm/u8IRMTuSkOX3LyLC99SYS/jh/ATB2CfLdfrbD/Cw+81LNBsIAAAA=[0m[Pipeline] {
+[8mha:////4GYmjHFxz8Osf0glj1Crw+YqP7cGiGbn+4bIJ7a8kgtNAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJCBwilorXc8AKTGOPEugu2g1PxIr7GH7CIRMUWq51t5vWGZfBQszfYaeothcbi4EaTFyb2/dVxwo4v2DAFdhqlTpJbfZpRctQwpyhhIWClqXEcLJkIa9Gph6qcIlOdo8/fUUBp2zs8oRDZHJWPX5g8bG5jG5h+nr8CmIYI5e6Qa78dPkgcDP2+AAAA[0m[Pipeline] echo
+Detected version: 0.0.9-SNAPSHOT
+[8mha:////4AXH1gqFt+s0RNMkNvK343aFxsl4EDSdr5Ge2ifHlhtAAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiKkAoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDREKHeHXPvt8AEJLRfkvgAAAA==[0m[Pipeline] sh
++ curl -X POST http://bracdemo-nexus.eastus.cloudapp.azure.com:9081/api/v1/bom -H 'Content-Type: multipart/form-data' -H 'X-Api-Key: odt_ikgtPlOM_0KqbYcUAFINcreMNhHJchLVK6CUgXSFV' -F projectName=brac-user -F autoCreate=true -F projectVersion=0.0.9-SNAPSHOT -F bom=@spring-app-2-sbom.json
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  377k    0     0  100  377k      0   183k  0:00:02  0:00:02 --:--:--  183k100  377k    0     0  100  377k      0   123k  0:00:03  0:00:03 --:--:--  123k100  377k    0     0  100  377k      0  95298  0:00:04  0:00:04 --:--:-- 95298100  377k  100    48  100  377k     11  93521  0:00:04  0:00:04 --:--:-- 93533
+{"token":"f23af0f1-7e89-43e5-8847-7e97a0ea7ecb"}
+[8mha:////4Jj7TA0+D4U3618ysLz+ko0/mSv8M79XIMsF4e87CXYtAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIi0QBCqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKYhQrk75Npvhw/KfjrPvgAAAA==[0m[Pipeline] sh
++ rm -f spring-app-2-sbom.json
+[8mha:////4DKJ+rW+Ay9nyOvAGE+DAkVB2CmSpKHFbfwmcpLIbVx1AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSUABCqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDut7l2hw/mj2AqvgAAAA==[0m[Pipeline] }
+[8mha:////4BcBOvB7EQT4y0UgC+9uBqLHzH6URIF9dde3HzJZ3WDZAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOLSIBEJUaW10vACExvjxLoztkNS8SK+xh+wiETFFqudbeb1hnUMcOJgsNc0WIqdRe9GkxdOHIar4wl7vmDHFNlpbPXUstLNgi0nDUuKElYCNpo6x9GSSbAVvXzIykky1TmF/B0FlFbd4QmFyOYkQ/rCHGB3G1Vk+nn+CmD2PkFZ73Md6g/Ij2JAvgAAAA==[0m[Pipeline] // dir
+[8mha:////4Gs3uOk2p/8EQCh3v3JQjJvGlneeRzwL4Ig2FELWhXtQAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMKpiJAQVVorDS8w8WGcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThyM6JEGS7GzwrvR5CUmDsPV8SR6voiOKbJD0eLUssZmwZYTwpKihJWEDVLnOFoyCbayVw9VOUWmOqeQv6OE0uo7PKGQ2ZxUSF+YA+xuo45MP89fAcw+QVnXuQ57/wF6mJm6vgAAAA==[0m[Pipeline] echo
+Building module in: spring-app-2
+[8mha:////4IOc1CyPl6IGXia2Yq92dkAnRNHaIqzR3Iwsl/v0M+MAAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0i5AQE2uUhROEJIS00f8lSWknTsTVuAOBSkx4sGxL1nu+oEkRDhQd6yz2HpP2bAijK4lNFPtLoIl1dGaaMFGwTNpJkrHHpUrKFhZVNawErC3qQMmjy7ARnbqrNih07SnHsu0F1N7c4AGVKOSsYv6WOcL2OppE+OP8BcA8ZKg5L7bjn2fzBqb3AMjCAAAA[0m[Pipeline] dir
+Running in /root/workspace/monorepo-vm/spring-app-2
+[8mha:////4LQuBglb2KG1sM6ROc75pUbEq9QtF5NbGEDUoOwyNj1yAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0AyTE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5AfdrPt52fxAR33berCAAAA[0m[Pipeline] {
+[8mha:////4KRnU8yy+j2Kf7gYb4Sg3AxUCaSORkH1wC0im7tRvy09AAAAox+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSEglR0VppeIFJjLFj3Tm2g1PxIr7GHwhEomKL1c4283zBOgY4ctBoFfWGYmvQu1HPCzOH/uo4o+ULtkyRncJG5YY7dVqw4aRgSVHCSsBGUes4GtIJtsLKu6ycJF2dU5i/g4DSdAM8oBCzOcmQvjAF2N3GLjL9PH8FMPkEZb3/VO3fsf/KvL4AAAA=[0m[Pipeline] sh
++ mvn clean package -DskipTests
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------------< com.example:user >--------------------------
+[INFO] Building Spring Crud without DB 0.0.9-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ user ---
+[INFO] Deleting /root/workspace/monorepo-vm/spring-app-2/target
+[INFO] 
+[INFO] --- maven-resources-plugin:3.2.0:resources (default-resources) @ user ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] Copying 1 resource
+[INFO] Copying 0 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ user ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 12 source files to /root/workspace/monorepo-vm/spring-app-2/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.2.0:testResources (default-testResources) @ user ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] skip non existing resourceDirectory /root/workspace/monorepo-vm/spring-app-2/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ user ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /root/workspace/monorepo-vm/spring-app-2/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.2:test (default-test) @ user ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:3.2.0:jar (default-jar) @ user ---
+[INFO] Building jar: /root/workspace/monorepo-vm/spring-app-2/target/user-0.0.9-SNAPSHOT.jar
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.5.2:repackage (repackage) @ user ---
+[INFO] Replacing main artifact with repackaged archive
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  3.549 s
+[INFO] Finished at: 2026-05-07T13:21:23+05:30
+[INFO] ------------------------------------------------------------------------
+[8mha:////4Ju0Bmx5yl+NP+PaN66xY3Rmx2xk1eDFRZVxdhR2Wil3AAAAox+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSAkJUaS03vMDExjix7oztkFS8iK/xBwKRqNhitbPNPF+wTBGOHC22hjpHqXEYfG+nhQPH7uJ5wJbP2DAl9galGSRrU88oORuYU5SwELAy1HhOjmyGtWjVXVVeka1OOU7fQUDp9A0eUIjJnFXMXxgjbK69Tkw/z18BjCFkKHf7T23fSJ3b674AAAA=[0m[Pipeline] }
+[8mha:////4OVlMIBD7iHkcRV4Cpl17qqQGEsNt9Uab7jd16eBC3DRAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJChUAoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDQMEcrDNtd+9wGi96QdvgAAAA==[0m[Pipeline] // dir
+[8mha:////4E67CemlrTaVZOzBzLHAKCaoYeihASh8u2BG/PS+qHHLAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMIRTSSEqNJaaXiBiQ/jxLoztkNS8SK+xh+wiETFFqudbeb1hnUMcOJgRI80WIqdFd6NJi8xcRiujifR80V0TJEdihanljU2C7acEJYUJawkbJA6x9GSSbCVvXqoyiky1TmF/B0llFbf4QmFzOakQvrCHGB3G3Vk+nn+CmD2Ccq6znXY+w9JNzffvgAAAA==[0m[Pipeline] echo
+Pushing module in: spring-app-2
+[8mha:////4IZFA0ZJae/a8O8yCXQ9hWTfAbqCwest/2PsGeKSSQA0AAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUYqiEEFPXKAsnCEkIaaP/S5LSTpyIq3EHApWY8GDZlqz3fEEVAxwpWNYZ7B1G5djgR5sTmyj0F08T6+jMFGEkb5gwkyBt2qUKSgYWFSWsOKwNKk/RoU2w4Z28y9pLtPUphbwdOJRO3+ABBc/kJEP6ljnA9jrqSPjj/AXAPCQomybbfvd5Vm8Evub1wgAAAA==[0m[Pipeline] dir
+Running in /root/workspace/monorepo-vm/spring-app-2
+[8mha:////4Ht300BSiBebrqALAx1fZsUg5MG79BHkP47Tlv+plGFyAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUggkhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYL8sJttPz+LD1KB9/zCAAAA[0m[Pipeline] {
+[8mha:////4NmZ0JRNl0oO+Q6NRqUIRbyri6btWwQ0bE0TP/sWns5iAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSQIMQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUO63n9qFNwf+WCm+AAAA[0m[Pipeline] sh
++ docker run --rm -v /root/workspace/monorepo-vm/spring-app-2:/app -w /app maven:3.8.6-openjdk-8 mvn help:evaluate -Dexpression=project.version -q -DforceStdout
+[8mha:////4IeyOlQU6LKL6JD4ISqOhKfsJwhiKI0hWcydmZweDXoKAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSIAqEqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDhnK//dQuvAFGz0MwvgAAAA==[0m[Pipeline] sh
++ docker run --rm -v /root/workspace/monorepo-vm/spring-app-2:/app -w /app maven:3.8.6-openjdk-8 mvn help:evaluate -Dexpression=project.artifactId -q -DforceStdout
+[8mha:////4HDhMCYPPCCyjkoN3HaLYbhI1R2ui6PhtRAurkMb1dwqAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSICEhRJXWcsMLTGyME+vO2A5JxYv4Gn8gEImKLVY728zzBcsU4cjRYmuoc5Qah8H3dlo4cOwungds+YwNU2JvUJpBsjb1jJKzgTlFCQsBK0ON5+TIZliLVt1V5RXZ6pTj9B0ElE7f4AGFmMxZxfyFMcLm2uvE9PP8FcAYMpT77ad24Q2FnG4bvgAAAA==[0m[Pipeline] nexusArtifactUploader
+Uploading artifact user-0.0.9-SNAPSHOT.jar started....
+GroupId: com.brac.demo
+ArtifactId: user
+Classifier: 
+Type: jar
+Version: 0.0.9-SNAPSHOT
+File: user-0.0.9-SNAPSHOT.jar
+Repository:maven-snapshots
+Downloading: http://bracdemo-nexus.eastus.cloudapp.azure.com:8081/repository/maven-snapshots/com/brac/demo/user/0.0.9-SNAPSHOT/maven-metadata.xml
+Uploading: http://bracdemo-nexus.eastus.cloudapp.azure.com:8081/repository/maven-snapshots/com/brac/demo/user/0.0.9-SNAPSHOT/user-0.0.9-20260507.075218-1.jar
+10 % completed (2.3 MB / 21 MB).
+20 % completed (4.5 MB / 21 MB).
+30 % completed (6.6 MB / 21 MB).
+40 % completed (8.7 MB / 21 MB).
+50 % completed (11 MB / 21 MB).
+60 % completed (13 MB / 21 MB).
+70 % completed (15 MB / 21 MB).
+80 % completed (17 MB / 21 MB).
+90 % completed (19 MB / 21 MB).
+100 % completed (21 MB / 21 MB).
+[8mha:////4IawFY8tOlQNy02mpn7/WvfF/11pf64AzkNRJitUQFIEAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSUCCEqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFDud5/avgHUAtBpvgAAAA==[0m[Pipeline] }
+[8mha:////4GI37SHhrKU+1ordChA17uHrlK2cMjqldI8WDnzfDwvYAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiUYEQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcr97lPbN5eAge++AAAA[0m[Pipeline] // dir
+[8mha:////4I0B/DmOs8sRwZJylzMrynvwPwEZivbybCEg83avVYpzAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+DOrAycoh0q1QhJtaoCycIaQhJo//bJKWdOBFX4w4EKjHhwbItWe/5gjIGOFIw3GnsLUZl+eAnkxOfKfRXTzN3dOGKMJLXvNVzS50+rbWlpGFVwWAjYKtReYoWTYKdcPIuKy/RVOcU8nYQwGw3wgMKkclJhvQtS4D9beoi4Y/zFwDLkIDVdbam+TzLN8dOIZ/CAAAA[0m[Pipeline] dir
+Running in /root/workspace/monorepo-vm/spring-app-2
+[8mha:////4B/LMxhd1Jt8FH3hZZPE52VcqiZ/l6Otb75CR/gw+r+qAAAApx+LCAAAAAAAAP9tjbEOgjAURR8QBldHP6LgSIwTa8PiF9RSa6F5D9uHMPlF/pr/IEri5J3uucnNeb4gjwGOFKzoDPYOo3Zi8KNdmpgo9BdPk+joLDRhJG9EY6aGWlOv2BAbWJOkkEnYGNSeokPLsJWduqvCK7TFicOyHSSkrr3BAxK5mFkF/sIcYHcd20j48/wVwDwwpFXFkO3L8nPN3zgbWwvDAAAA[0m[Pipeline] {
+[8mha:////4GC0Ag4i1MTLEML6eBFIUT7agHxfwmE6w4KIwJ75cpKIAAAAox+LCAAAAAAAAP9tjTESgjAQRRcYC1tLDxGgdqxsMzSeIIYYA5ndkCxC5Ym8mneQgRkrf/Hnv9+89wd2KcKZohWdwd5h0k4EP9pliYlif/c0iY5uQhMm8kY0ZmqoNZcNG2IDW7IcCgl7g9pTcmgZDrJTT1V6hba8cly+k4TctQO8IJOLmVXkFeYIx8fYJsKf568A5sBQ1FW1dh2+9eP8fcAAAAA=[0m[Pipeline] sh
+Uploaded: http://bracdemo-nexus.eastus.cloudapp.azure.com:8081/repository/maven-snapshots/com/brac/demo/user/0.0.9-SNAPSHOT/user-0.0.9-20260507.075218-1.jar (21 MB at 412 kB/s)
+Uploading: http://bracdemo-nexus.eastus.cloudapp.azure.com:8081/repository/maven-snapshots/com/brac/demo/user/0.0.9-SNAPSHOT/maven-metadata.xml
+Uploaded: http://bracdemo-nexus.eastus.cloudapp.azure.com:8081/repository/maven-snapshots/com/brac/demo/user/0.0.9-SNAPSHOT/maven-metadata.xml (594 B at 409 B/s)
+Uploading artifact user-0.0.9-SNAPSHOT.jar completed.
++ docker run --rm -v /root/workspace/monorepo-vm/spring-app-2:/app -w /app maven:3.8.6-openjdk-8 mvn help:evaluate -Dexpression=project.version -q -DforceStdout
+[8mha:////4Kxu46yu5yvEXATVlIme8h886MnIf8YtNSNOvQvTbJy0AAAApB+LCAAAAAAAAP9tjTESgjAURD8wFraWHiKgrWNFm6HxBJHEmJD5PyZBqDyRV/MOZmDGyi129m3z3h/YxABnCppZhYPB2Bvm3ajzYhOF4eZoYpaurCeM5BTr1NSRVO2KHSUFa4oSKg5bhb2jaFAn2HErnqJ2AnV9SSF/Jw6lkQ94QcGzOYmQFpgD7O+jjIQ/z18BzD5BdWiapY/+Czaw0VbAAAAA[0m[Pipeline] sh
++ docker run --rm -v /root/workspace/monorepo-vm/spring-app-2:/app -w /app maven:3.8.6-openjdk-8 mvn help:evaluate -Dexpression=project.artifactId -q -DforceStdout
+[8mha:////4NWSq+84C8Fx1Sobb5zu9IHoiKb0KIBsD+Vcn7tfhhH6AAAApx+LCAAAAAAAAP9tjbEOgjAYhH8gDK6OPkTBOBon1obFJ6il1kLz/9gWy+QT+Wq+gxUSJ2+43F1y+V5vKL2DEznNeoWDQS8NG+2kU2KR3HC1FFlPFyYJPVnFWhVb6lSz1paCglVZDgWHjUJpyRvUAba8Fw9RWYG6OgeXtiOH3HR3eELGEzkIF5YyO9jdps4T/jh/ATCPAYp9XS9++H7LDy7NSPPEAAAA[0m[Pipeline] withCredentials
+Masking supported pattern matches of $PK or $NEXUS_USER or $NEXUS_PWD
+[8mha:////4MWquKCvXMQ1xDpxOcqvJjGH8fHpyqrrQzsuspouZVLeAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ39bdWBl5BApCDbUiTXqwglCEkLS6P+SpLQTJ+Jq3IHSSkx4sGxL1nu9oYwBagqGOY2txSgt63xvpsQGCu3V08AcXZgkjOQ1a/TQkNKnpTaUNCzKcig4rDRKT9GiSbDmTjxE5QWa6pzCtB055Fbd4QkZn8hJhDSXMcDm1qtI+OP8BcDYJSh22/3sh++3/ABmL9OZxAAAAA==[0m[Pipeline] {
+[8mha:////4D7RqT8qtbOs2NotKJLEgfhX9E4IgsytnaaagRC7s5XcAAAApR+LCAAAAAAAAP9tjTEOwjAQBC+JKGgpeYQDElQoFa2VhhcY2xg71l2wHZyKF/E1/kCUSFRssdrZZt4fWMUADQXDnMbOYpSW9X4w02KZQnfzlJmjK5OEkbxmrc4tKX1esKWkYUlRQsVhrVF6ihZNgg134ilqL9DUlxSm78ShtOoBLyj4ZE4ipBnGANv7oCLhz/NXAGOfoNrvDnMf+y8LKNqdwAAAAA==[0m[Pipeline] sh
+Warning: A secret was passed to "sh" using Groovy String interpolation, which is insecure.
+		 Affected argument(s) used the following variable(s): [PK]
+		 See https://jenkins.io/redirect/groovy-string-interpolation for details.
++ ssh -o StrictHostKeyChecking=no -i **** app@192.168.85.193 '
+                        docker stop user || true &&                         docker rm user || true &&                         rm -f /home/app/*.jar
+                    '
+user
+user
++ scp -o StrictHostKeyChecking=no -i **** target/user-0.0.9-SNAPSHOT.jar app@192.168.85.193:/home/app/
++ ssh -o StrictHostKeyChecking=no -i **** app@192.168.85.193 '
+                        docker run -d --name user -p 8082:8080                             --network mysql-container_mysql                             -v /home/app/user-0.0.9-SNAPSHOT.jar:/app.jar                             -e SPRING_DATASOURCE_URL='\''jdbc:mysql://mysql-container:3306/customer?createDatabaseIfNotExist=true'\''                             -e SPRING_DATASOURCE_USERNAME=root                             -e SPRING_DATASOURCE_PASSWORD='\'''\''                             maven:3.8.6-openjdk-8 java -jar /app.jar
+                    '
+8d1c4368f5e539c4605323e08b7070395d5dfb706db2dda5e6daba55284ea6b8
+[8mha:////4Lt7k9Gm2pCWk08fJB4Y6cgIibZ9/2PqSjFZK48UgFPbAAAAph+LCAAAAAAAAP9tjTEOwjAQBC+JKGgpeYQDEqJBqWitNLzA2MbYse6C7eBUvIiv8QeiRKJii9XONvP+wCoGaCgY5jR2FqO0rPeDmRbLFLqbp8wcXZkkjOQ1a3VuSenzgi0lDUuKEioOa43SU7RoEmy4E09Re4GmvqQwfScOpVUPeEHBJ3MSIc0wBtjeBxUJf56/Ahj7PkG13x3nPnwBLaxbT8AAAAA=[0m[Pipeline] }
+[8mha:////4Nh7jwsOHa2o11fOIkqXEPCIE9IPMyhgpQf2etqhNpbWAAAAph+LCAAAAAAAAP9tjTEOwjAQBC+JKGgpeYQDoqBAqWitNLzA2MbYse6C7eBUvIiv8QeiRKJii9XONvP+wCoGaCgY5jR2FqO0rPeDmRbLFLqbp8wcXZkkjOQ1a3VuSenzgi0lDUuKEioOa43SU7RoEmy4E09Re4GmvqQwfScOpVUPeEHBJ3MSIc0wBtjeBxUJf56/Ahj7PkG13x3nPnwBOjJId8AAAAA=[0m[Pipeline] // withCredentials
+[8mha:////4Dy7v7SPf45uGyIqKTKu9kPo8oU4Bx0sESOkj6ZjAoQhAAAApR+LCAAAAAAAAP9tjTEOwjAQBC+JKGgpeYQTOiREldZKwwtMbIwd687YDknFi/gaf8BKJCq2WO1sM+8PbGKAMwXNrMLBYOwN827UebGJwnBzNDFLV9YTRnKKdWrqSKp2xY6SgjVFCRWHrcLeUTSoE+y4FU9RO4G6vqSQvxOH0sgHvKDg2ZxESAvMAfb3UUbCn+evAGbvE1SH5rh08wVpEwkYwAAAAA==[0m[Pipeline] }
+[8mha:////4E44zjUiBGCfy/IGpYEpi0GHNz02oJJBnwy7iAjbPF1yAAAApB+LCAAAAAAAAP9tjTEOwjAQBC+JKGgpeYQDZYSoaK00vMDExjix7ox9wal4EV/jD0REomKrnWnm9YZVinCkaEVvcHCYOieCH+38RKY4XD1l0dNFdISJvBGtyS1pc1qwJTawrCihkrA22HlKDi3DRvbqoWqv0NZnjrM7SCidvsMTCjmXWUX+whRhext1Ivx1/gZgCoGh2u8ahrJpPv/lpcq/AAAA[0m[Pipeline] // dir
+[8mha:////4GyAdKeiPUSo3eXDTx7mRNKhtQLBC2QXdqtD0d3JkNBLAAAApR+LCAAAAAAAAP9tjTESgjAQRRcYC1tLDxGkoXGsaDM0niCGGAOZXUwWofJEXs07mJEZK3/132ve6w2bGOBEwYre4OAwaidGP9n0xExhuHqaRU8XoQkjeSNaM7fUmWbFltjAuiyHQsLWoPYUHVqGnezVQ5VeoS3PHJI7Sshdd4cnZDKVWQX+whJgf5u6SPjr/A3AMo4MRVUdGPK6/gDdvvpcvwAAAA==[0m[Pipeline] }
+[8mha:////4Lrt5yohkVcCltsg49M7/woLDcbvDQLPTKF42qUHkGrBAAAApR+LCAAAAAAAAP9tjTEOwjAQBC+JKGgpeYSjFNAgKlorDS8wsTFOrDtjX3AqXsTX+AMRkajYameaeb1hlSIcKVrRGxwcps6J4Ec7P5EpDldPWfR0ER1hIm9Ea3JL2pwWbIkNLCtKqCSsDXaekkPLsJG9eqjaK7T1mePsDhJKp+/whELOZVaRvzBF2N5GnQh/nb8BmEJgqJqmYSj3uw/CPK8OvwAAAA==[0m[Pipeline] // script
+[8mha:////4EzQc4QlYMaaWcdC2Y2qZQeTrmFZV7wxA/ZEG776cxz+AAAAph+LCAAAAAAAAP9tjbEOgjAURR8QB1dHP6IEY1wMk2vD4hfUUmuheQ/bhzD5Rf6a/2AjiZN3uucs5/WGVQxQU7CiM9g7jNqJwY82PTFR6K+eJtHRRWjCSN6IxkwNtea0YENsYFmWQyFhbVB7ig4tw0Z26qFKr9CWZw7JHSXkrr3DEzKZyqwCf2EOsL2NbST8df4GYB4GhqKqdgz5Yf8B+n48/78AAAA=[0m[Pipeline] }
+[8mha:////4LzibLGu4q0FbBgZhLgUsIIvZt3zoljbxWza3kQLY4NBAAAAph+LCAAAAAAAAP9tjbEOgjAURR8QB1dHP6KEkLgYJ9aGxS+oba2F5j1sH8LkF/lr/oNEEifvdM9ZzusNmxThRNGJzmLvMWkvhjC65YmJYn8NNImOLkITJgpWtHZqydhmxZbYwrosh0LC1qIOlDw6hp3s1EOVQaErzxwXd5SQe3OHJ2RyKbOK/IU5wv42mkT46/wNwDwMDEVV1Qz5of4A/DgEqr8AAAA=[0m[Pipeline] // stage
+[8mha:////4Hpc+Ry50FxpRLju1LCvaWcATElDcqLjHn62m7KMEjvUAAAApR+LCAAAAAAAAP9tjTEOwjAQBM+JKGgpeYSjSIgGUdFaaXiBiY1xYt0F+4JT8SK+xh+IiETFVjvTzOsNqxThSNHJzmLvMbVeDmF085OZYn8NlGVHF9kSJgpWNjY3ZOxpwYbYwjJRQKlgbbENlDw6ho3q9ENXQaOrzhxnd1BQeHOHJwg1l1lH/sIUYXsbTSL8df4GYBoGhrKudwxi/wGoXBOYvgAAAA==[0m[Pipeline] }
+[8mha:////4HIL+7frdAWEYQgz3NW/qkiTTd/YKNTSazFUlAlxMKq5AAAApB+LCAAAAAAAAP9tjTESgjAQRTcwFraWHiIMBZVjZZuh8QQRYgxkdmOyCJUn8mrewYzMWPmr/17zXm/YpAhHilYOBkeHqXMy+MnmJ2eK49XTLAe6yI4wkTeyNXNLvTmt2BIbWCcKKBVsDXaekkPLsFODfujKa7TVmWN2BwWF6+/wBKFymXXkLywR9repT4S/zt8ALCEwlHXdMIjmA6Ikejy+AAAA[0m[Pipeline] // withEnv
+[8mha:////4G61QafB3ZEveO32b1flK1uFisErCoXIRYhlCRgfZmcfAAAApR+LCAAAAAAAAP9tjTEOwjAQBM+JKGgpeYSjSIgGUdFaaXiBiY1xYt0F+4JT8SK+xh+IiETFVjvTzOsNqxThSNHJzmLvMbVeDmF085OZYn8NlGVHF9kSJgpWNjY3ZOxpwYbYwjJRQKlgbbENlDw6ho3q9ENXQaOrzhxnd1BQeHOHJwg1l1lH/sIUYXsbTSL8df4GYBoGhrKu9wxi9wHkbt0MvgAAAA==[0m[Pipeline] }
+[8mha:////4Omj6eYbuNVxxPa39V/0XirMj2g4yjkxRa+k69if/pCNAAAApR+LCAAAAAAAAP9tjTEOwjAQBM+JKGgpeYSjiIICUdFaaXiBiY1xYt0F+4JT8SK+xh+IiETFVjvTzOsNqxThSNHJzmLvMbVeDmF085OZYn8NlGVHF9kSJgpWNjY3ZOxpwYbYwjJRQKlgbbENlDw6ho3q9ENXQaOrzhxnd1BQeHOHJwg1l1lH/sIUYXsbTSL8df4GYBoGhrKu9wxi9wH30tmvvgAAAA==[0m[Pipeline] // node
+[8mha:////4NnLvLfE4osFXYBHXhVyT8Iw0106KrlsIw8V/T1SGTueAAAApB+LCAAAAAAAAP9tjTEOwjAQBM+JKGgpeYSjUCEhKlorDS8wsTFOrLtgX3AqXsTX+AMRkajYameaeb1hlSIcKTrZWew9ptbLIYxufjJT7K+BsuzoIlvCRMHKxuaGjD0t2BBbWCYKKBWsLbaBkkfHsFGdfugqaHTVmePsDgoKb+7wBKHmMuvIX5gibG+jSYS/zt8ATMPAUNb1nkHsPrB1jlq+AAAA[0m[Pipeline] End of Pipeline
+Finished: SUCCESS

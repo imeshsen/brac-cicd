@@ -1,0 +1,22 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<slave>
+  <name>Agent Node - 192.168.85.192</name>
+  <description>Agent that executes all the jenkins jobs</description>
+  <remoteFS>/root</remoteFS>
+  <numExecutors>1</numExecutors>
+  <mode>NORMAL</mode>
+  <retentionStrategy class="hudson.slaves.RetentionStrategy$Always"/>
+  <launcher class="hudson.plugins.sshslaves.SSHLauncher" plugin="ssh-slaves@3.1097.v868116049892">
+    <host>192.168.85.192</host>
+    <port>22</port>
+    <credentialsId>Jenkins agent</credentialsId>
+    <javaPath>/usr/bin/java</javaPath>
+    <launchTimeoutSeconds>60</launchTimeoutSeconds>
+    <maxNumRetries>10</maxNumRetries>
+    <retryWaitTime>15</retryWaitTime>
+    <sshHostKeyVerificationStrategy class="hudson.plugins.sshslaves.verifiers.NonVerifyingKeyVerificationStrategy"/>
+    <tcpNoDelay>true</tcpNoDelay>
+  </launcher>
+  <label>192.168.85.192</label>
+  <nodeProperties/>
+</slave>
