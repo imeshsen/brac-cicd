@@ -1,0 +1,171 @@
+def scanCode(moduleName) {
+    echo "Scanning: ${moduleName}"
+    dir(moduleName) {
+        sh "rm -f ${moduleName}-sbom.json || true"
+        sh "docker run --rm -v ${WORKSPACE}/${moduleName}:/workspace \
+        -v /root/.cache/trivy:/root/.cache/trivy aquasec/trivy:latest fs \
+        --format cyclonedx \
+        --scanners vuln \
+      --output /workspace/${moduleName}-sbom.json /workspace"
+    }
+}
+def publishSbom(moduleName) {
+    echo "Exporting ${moduleName} SBOM"
+    def appName = sh(
+            script: """
+            docker run --rm -v ${WORKSPACE}/${moduleName}:/app -w /app maven:3.8.6-openjdk-8 \
+            mvn help:evaluate -Dexpression=project.artifactId -q -DforceStdout
+            """,
+            returnStdout: true
+        ).trim()
+        def appVersion = sh(
+            script: """
+            docker run --rm -v ${WORKSPACE}/${moduleName}:/app -w /app maven:3.8.6-openjdk-8 \
+            mvn help:evaluate -Dexpression=project.version -q -DforceStdout
+            """,
+            returnStdout: true
+        ).trim()
+    dir(moduleName) {
+        echo "Detected version: ${appVersion}"
+        sh """
+        curl -X POST "http://bracdemo-nexus.eastus.cloudapp.azure.com:9081/api/v1/bom" \
+             -H 'Content-Type: multipart/form-data' \
+             -H 'X-Api-Key: odt_ikgtPlOM_0KqbYcUAFINcreMNhHJchLVK6CUgXSFV' \
+             -F "projectName=brac-${appName}-app" \
+             -F "autoCreate=true" \
+             -F "projectVersion=${appVersion}" \
+             -F "bom=@${moduleName}-sbom.json"
+        """
+        sh "rm -f ${moduleName}-sbom.json"
+    }
+}
+def buildModule(moduleName) {
+    echo "Building image for: ${moduleName}"
+        def appVersion = sh(
+            script: """
+            docker run --rm -v ${WORKSPACE}/${moduleName}:/app -w /app maven:3.8.6-openjdk-8 \
+            mvn help:evaluate -Dexpression=project.version -q -DforceStdout
+            """,
+            returnStdout: true
+        ).trim()
+    dir(moduleName) {
+        def gitCommit = sh(
+            returnStdout: true,
+            script: 'git rev-parse --short HEAD'
+        ).trim()
+        sh """
+        docker build -t test-quay-quay.apps.pococp.nable.local/quayadmin/${moduleName}:${appVersion} .
+        docker image prune -f
+        """
+    }
+}
+def pushImage(moduleName) {
+    echo "Pushing image of: ${moduleName}"
+    def appVersion = sh(
+            script: """
+            docker run --rm -v ${WORKSPACE}/${moduleName}:/app -w /app maven:3.8.6-openjdk-8 \
+            mvn help:evaluate -Dexpression=project.version -q -DforceStdout
+            """,
+            returnStdout: true
+        ).trim()
+    dir(moduleName) {
+        sh """
+        docker push test-quay-quay.apps.pococp.nable.local/quayadmin/${moduleName}:${appVersion}
+        docker rmi test-quay-quay.apps.pococp.nable.local/quayadmin/${moduleName}:${appVersion}
+        docker image prune -f
+        """
+    }
+}
+def updateManifests(moduleName) {
+    echo "Pushing image of ${moduleName}"
+    def appVersion = sh(
+            script: """
+            docker run --rm -v ${WORKSPACE}/${moduleName}:/app -w /app maven:3.8.6-openjdk-8 \
+            mvn help:evaluate -Dexpression=project.version -q -DforceStdout
+            """,
+            returnStdout: true
+        ).trim()
+    dir(moduleName) {
+        // def gitCommit = sh(returnStdout: true, script: 'git rev-parse --short HEAD').trim()
+        def manifestRepo = 'https://bracdemo-github-primary.eastus.cloudapp.azure.com/BRAC-Bank-Nable/ocp-manifests.git'
+        def fullImageName = "test-quay-quay.apps.pococp.nable.local/quayadmin/${moduleName}:${appVersion}"
+        withCredentials([usernamePassword(credentialsId: 'git-repo-creds', passwordVariable: 'GIT_PASS', usernameVariable: 'GIT_USER')]) {
+            // Clean up any existing directory from previous failed runs
+            sh "rm -rf manifest-repo"
+            // Use single quotes for the URL to avoid the security warning
+            sh 'git clone https://${GIT_USER}:${GIT_PASS}@' + manifestRepo.replace("https://", "") + ' manifest-repo'
+            dir('manifest-repo') {
+                sh """
+                    sed -i 's|image: .*|image: ${fullImageName}|g' ${moduleName}/deployment.yml
+                
+                    if ! git diff --exit-code ${moduleName}/deployment.yml; then
+                        git config user.email "jenkins@nable.lk"
+                        git config user.name "Jenkins CI"
+                
+                        git add ${moduleName}/deployment.yml
+                        git commit -m "update ${moduleName} image to ${appVersion}"
+                        git push origin HEAD:master
+                    else
+                        echo "No changes detected."
+                    fi
+                """
+            }
+        }
+    }
+}
+
+
+pipeline {
+    agent { label '192.168.85.192' }
+
+    environment {
+        REMOTE_USER = 'app'
+        REMOTE_HOST = '192.168.85.193'
+        SSH_CRED_ID = 'app-vm'
+        GITHUB_CREDS = 'git-repo-creds'
+        GIT_BRANCH = 'main'
+    }
+
+    stages {
+
+        stage('Clone') {
+            steps {
+                git branch: 'main',
+                    url: 'https://bracdemo-github-primary.eastus.cloudapp.azure.com/BRAC-Bank-Nable/brac-monorepo.git',
+                    credentialsId: 'git-repo-creds'
+            }
+        }
+
+        stage('Build app-1') {
+            when {
+                changeset "spring-app-1/**"
+            }
+            steps {
+                script {
+                    echo 'Detected changes in spring-app-1'
+                    scanCode("spring-app-1")
+                    publishSbom("spring-app-1")
+                    buildModule("spring-app-1")
+                    pushImage("spring-app-1")
+                    updateManifests("spring-app-1")
+                }
+            }
+        }
+
+        stage('Build app-2') {
+            when {
+                changeset "spring-app-2/**"
+            }
+            steps {
+                script {
+                    echo 'Detected changes in spring-app-2.'
+                    scanCode("spring-app-2")
+                    publishSbom("spring-app-2")
+                    buildModule("spring-app-2")
+                    pushImage("spring-app-2")
+                    updateManifests("spring-app-2")
+                }
+            }
+        }
+    }
+}

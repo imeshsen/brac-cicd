@@ -1,0 +1,192 @@
+def scanCode(moduleName) {
+    echo "Scanning: ${moduleName}"
+    dir(moduleName) {
+        sh "rm -f ${moduleName}-sbom.json || true"
+        sh "docker run --rm -v ${WORKSPACE}/${moduleName}:/workspace \
+        -v /root/.cache/trivy:/root/.cache/trivy aquasec/trivy:latest fs \
+        --format cyclonedx \
+        --scanners vuln \
+      --output /workspace/${moduleName}-sbom.json /workspace"
+    }
+}
+
+def publishSbom(moduleName) {
+    echo "Exporting ${moduleName} SBOM"
+    def appName = sh(
+            script: """
+            docker run --rm -v ${WORKSPACE}/${moduleName}:/app -w /app maven:3.8.6-openjdk-8 \
+            mvn help:evaluate -Dexpression=project.artifactId -q -DforceStdout
+            """,
+            returnStdout: true
+        ).trim()
+        def appVersion = sh(
+            script: """
+            docker run --rm -v ${WORKSPACE}/${moduleName}:/app -w /app maven:3.8.6-openjdk-8 \
+            mvn help:evaluate -Dexpression=project.version -q -DforceStdout
+            """,
+            returnStdout: true
+        ).trim()
+    dir(moduleName) {
+        echo "Detected version: ${appVersion}"
+        sh """
+        curl -X POST "http://bracdemo-nexus.eastus.cloudapp.azure.com:9081/api/v1/bom" \
+             -H 'Content-Type: multipart/form-data' \
+             -H 'X-Api-Key: odt_ikgtPlOM_0KqbYcUAFINcreMNhHJchLVK6CUgXSFV' \
+             -F "projectName=brac-${appName}" \
+             -F "autoCreate=true" \
+             -F "projectVersion=${appVersion}" \
+             -F "bom=@${moduleName}-sbom.json"
+        """
+        sh "rm -f ${moduleName}-sbom.json"
+    }
+}
+def buildModule(moduleName) {
+    echo "Building module in: ${moduleName}"
+    dir(moduleName) {
+        // sh """
+        // docker run -v ${WORKSPACE}/${moduleName}:/app -w /app --rm maven:3.8.6-openjdk-8 mvn clean package -DskipTests
+        // """
+        sh """
+        mvn clean package -DskipTests
+        """
+    }
+}
+def storeArtifact(moduleName) {
+    echo "Pushing module in: ${moduleName}"
+    dir(moduleName) {
+        def appVersion = sh(
+            script: """
+            docker run --rm -v ${WORKSPACE}/${moduleName}:/app -w /app maven:3.8.6-openjdk-8 \
+            mvn help:evaluate -Dexpression=project.version -q -DforceStdout
+            """,
+            returnStdout: true
+        ).trim()
+
+        def appName = sh(
+            script: """
+            docker run --rm -v ${WORKSPACE}/${moduleName}:/app -w /app maven:3.8.6-openjdk-8 \
+            mvn help:evaluate -Dexpression=project.artifactId -q -DforceStdout
+            """,
+            returnStdout: true
+        ).trim()
+        nexusArtifactUploader(
+            nexusVersion: 'nexus3',
+            protocol: 'http',
+            nexusUrl: 'bracdemo-nexus.eastus.cloudapp.azure.com:8081',
+            groupId: 'com.brac.demo', // Organized for your microservice
+            version: "${appVersion}",
+            repository: 'maven-snapshots', // Use the Snapshot repo
+            credentialsId: 'nexus-creds',
+            artifacts: [
+                [artifactId: "${appName}", 
+                 file: "target/${appName}-${appVersion}.jar", 
+                 type: 'jar']
+            ]
+        )
+    }
+}
+def deploy(moduleName) {
+    dir(moduleName) {
+        def appVersion = sh(
+            script: """
+            docker run --rm -v ${WORKSPACE}/${moduleName}:/app -w /app maven:3.8.6-openjdk-8 \
+            mvn help:evaluate -Dexpression=project.version -q -DforceStdout
+            """,
+            returnStdout: true
+        ).trim()
+
+        def appName = sh(
+            script: """
+            docker run --rm -v ${WORKSPACE}/${moduleName}:/app -w /app maven:3.8.6-openjdk-8 \
+            mvn help:evaluate -Dexpression=project.artifactId -q -DforceStdout
+            """,
+            returnStdout: true
+        ).trim()
+        def portMap = [
+                        'customer': 8081,
+                        'user'   : 8082
+                    ]
+        def EXTERNAL_PORT = portMap[appName] ?: 8080
+        withCredentials([
+        sshUserPrivateKey(credentialsId: 'app-vm', keyFileVariable: 'PK'),
+        usernamePassword(credentialsId: 'nexus-creds', usernameVariable: 'NEXUS_USER', passwordVariable: 'NEXUS_PWD')
+                ]) {
+                    sh """
+                    ssh -o StrictHostKeyChecking=no -i $PK app@192.168.85.193 "
+                        docker stop ${appName} || true && \
+                        docker rm ${appName} || true && \
+                        rm -f /home/app/*.jar
+                    "
+                    
+                    # 2. Copy the new file (fresh replacement)
+                    scp -o StrictHostKeyChecking=no -i $PK target/${appName}-${appVersion}.jar app@192.168.85.193:/home/app/
+        
+                    # 2. Cleanup and Run the container via SSH
+                    ssh -o StrictHostKeyChecking=no -i $PK app@192.168.85.193 "
+                        docker run -d --name ${appName} -p ${EXTERNAL_PORT}:8080 \
+                            --network mysql-container_mysql \
+                            -v /home/app/${appName}-${appVersion}.jar:/app.jar \
+                            -e SPRING_DATASOURCE_URL='jdbc:mysql://mysql-container:3306/customer?createDatabaseIfNotExist=true' \
+                            -e SPRING_DATASOURCE_USERNAME=root \
+                            -e SPRING_DATASOURCE_PASSWORD='' \
+                            maven:3.8.6-openjdk-8 java -jar /app.jar
+                    "
+                    """
+                }
+    }
+}
+
+pipeline {
+    agent { label '192.168.85.192' }
+
+    environment {
+        REMOTE_USER = 'app'
+        REMOTE_HOST = '192.168.85.193'
+        SSH_CRED_ID = 'app-vm'
+        GITHUB_CREDS = 'git-repo-creds'
+        GIT_BRANCH = 'main'
+    }
+
+    stages {
+
+        stage('Clone') {
+            steps {
+                git branch: 'main',
+                    url: 'https://bracdemo-github-primary.eastus.cloudapp.azure.com/BRAC-Bank-Nable/brac-monorepo.git',
+                    credentialsId: 'git-repo-creds'
+            }
+        }
+
+        stage('Build app-1') {
+            when {
+                changeset "spring-app-1/**"
+            }
+            steps {
+                script {
+                    echo 'Detected changes in spring-app-1'
+                    scanCode("spring-app-1")
+                    publishSbom("spring-app-1")
+                    buildModule("spring-app-1")
+                    storeArtifact("spring-app-1")
+                    deploy("spring-app-1")
+                }
+            }
+        }
+
+        stage('Build app-2') {
+            when {
+                changeset "spring-app-2/**"
+            }
+            steps {
+                script {
+                    echo 'Detected changes in spring-app-2.'
+                    scanCode("spring-app-2")
+                    publishSbom("spring-app-2")
+                    buildModule("spring-app-2")
+                    storeArtifact("spring-app-2")
+                    deploy("spring-app-2")
+                }
+            }
+        }
+    }
+}
